@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace MVCView
 {
-    public partial class frmQuanLyBan : Form
+    public partial class frmChooseItem : Form
     {
-        public frmQuanLyBan()
+        public frmChooseItem()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

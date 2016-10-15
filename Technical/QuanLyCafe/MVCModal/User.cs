@@ -9,7 +9,6 @@ namespace WinFormMVC.Model
             Male   = 1,
             Female = 2
         }
-
         private string    _FirstName;
         public string FirstName 
         {
