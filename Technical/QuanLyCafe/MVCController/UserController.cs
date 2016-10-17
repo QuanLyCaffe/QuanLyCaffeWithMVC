@@ -40,7 +40,6 @@ namespace WinFormMVC.Controller
            usr.Sex           =  _view.Sex;
         }
 
-
         public void LoadView()
         {
             _view.ClearGrid();

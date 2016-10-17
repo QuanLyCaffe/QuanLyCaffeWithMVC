@@ -37,7 +37,8 @@
             this.btnBan3 = new System.Windows.Forms.Button();
             this.btnThemBan = new System.Windows.Forms.Button();
             this.topContain = new System.Windows.Forms.Panel();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.lbldate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.bottomContain.SuspendLayout();
             this.contain.SuspendLayout();
             this.flpBan.SuspendLayout();
@@ -94,7 +95,6 @@
             // 
             // btnBan1
             // 
-            this.btnBan1.BackgroundImage = global::MVCView.Properties.Resources.table1;
             this.btnBan1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBan1.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBan1.Location = new System.Drawing.Point(13, 13);
@@ -137,23 +137,35 @@
             // topContain
             // 
             this.topContain.BackColor = System.Drawing.Color.Transparent;
-            this.topContain.Controls.Add(this.lblTitle);
+            this.topContain.Controls.Add(this.lbldate);
+            this.topContain.Controls.Add(this.lblTime);
             this.topContain.Dock = System.Windows.Forms.DockStyle.Top;
             this.topContain.Location = new System.Drawing.Point(0, 0);
             this.topContain.Name = "topContain";
             this.topContain.Size = new System.Drawing.Size(584, 48);
             this.topContain.TabIndex = 0;
             // 
-            // lblTitle
+            // lbldate
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(226, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(117, 25);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "WELCOME";
+            this.lbldate.AutoSize = true;
+            this.lbldate.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.ForeColor = System.Drawing.Color.White;
+            this.lbldate.Location = new System.Drawing.Point(290, 9);
+            this.lbldate.Name = "lbldate";
+            this.lbldate.Size = new System.Drawing.Size(108, 25);
+            this.lbldate.TabIndex = 0;
+            this.lbldate.Text = "01/12/2016";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.White;
+            this.lblTime.Location = new System.Drawing.Point(226, 9);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(58, 25);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "00:00";
             // 
             // frmQuanLyBan
             // 
@@ -186,7 +198,8 @@
         private System.Windows.Forms.Button btnBan3;
         private System.Windows.Forms.Button btnThemBan;
         private System.Windows.Forms.Panel topContain;
-        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbldate;
     }
 }

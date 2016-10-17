@@ -50,6 +50,12 @@
     <Compile Include="frmChooseItem.Designer.cs">
       <DependentUpon>frmChooseItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNhapNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapNguyenLieu.Designer.cs">
+      <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQuanLyBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,12 @@
     </Compile>
     <Compile Include="frmQuanLyNhanVien.Designer.cs">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXuatNguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXuatNguyenLieu.Designer.cs">
+      <DependentUpon>frmXuatNguyenLieu.cs</DependentUpon>
     </Compile>
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
@@ -100,6 +112,9 @@
     <EmbeddedResource Include="frmChooseItem.resx">
       <DependentUpon>frmChooseItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNhapNguyenLieu.resx">
+      <DependentUpon>frmNhapNguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyBan.resx">
       <DependentUpon>frmQuanLyBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyNhanVien.resx">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXuatNguyenLieu.resx">
+      <DependentUpon>frmXuatNguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
@@ -162,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_coffe.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

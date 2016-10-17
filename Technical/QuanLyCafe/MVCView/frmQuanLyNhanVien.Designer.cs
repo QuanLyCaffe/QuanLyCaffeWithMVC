@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.topContain = new System.Windows.Forms.Panel();
-            this.bottomContain = new System.Windows.Forms.Panel();
-            this.contain = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnXoaNV = new System.Windows.Forms.Button();
+            this.btnThemNV = new System.Windows.Forms.Button();
+            this.btnUpdateNV = new System.Windows.Forms.Button();
             this.grpDetails = new System.Windows.Forms.GroupBox();
+            this.dtpNgayBatDau = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.grbgioitinh = new System.Windows.Forms.GroupBox();
             this.rdNu = new System.Windows.Forms.RadioButton();
             this.rdNam = new System.Windows.Forms.RadioButton();
             this.lblNgayBatDau = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
+            this.txbLuong = new System.Windows.Forms.TextBox();
+            this.lbLuong = new System.Windows.Forms.Label();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.lblHoTen = new System.Windows.Forms.Label();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.lblCMND = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnXoaNV = new System.Windows.Forms.Button();
-            this.btnThemNV = new System.Windows.Forms.Button();
-            this.btnUpdateNV = new System.Windows.Forms.Button();
-            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayBatDau = new System.Windows.Forms.DateTimePicker();
-            this.lbLuong = new System.Windows.Forms.Label();
-            this.txbLuong = new System.Windows.Forms.TextBox();
+            this.bottomContain = new System.Windows.Forms.Panel();
+            this.contain = new System.Windows.Forms.Panel();
             this.grdNhanVien = new System.Windows.Forms.ListView();
             this.topContain.SuspendLayout();
-            this.contain.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.grpDetails.SuspendLayout();
             this.grbgioitinh.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.contain.SuspendLayout();
             this.SuspendLayout();
             // 
             // topContain
@@ -67,23 +67,53 @@
             this.topContain.Size = new System.Drawing.Size(717, 159);
             this.topContain.TabIndex = 0;
             // 
-            // bottomContain
+            // panel4
             // 
-            this.bottomContain.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bottomContain.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomContain.Location = new System.Drawing.Point(0, 347);
-            this.bottomContain.Name = "bottomContain";
-            this.bottomContain.Size = new System.Drawing.Size(717, 25);
-            this.bottomContain.TabIndex = 1;
+            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel4.Controls.Add(this.btnXoaNV);
+            this.panel4.Controls.Add(this.btnThemNV);
+            this.panel4.Controls.Add(this.btnUpdateNV);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(533, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(184, 159);
+            this.panel4.TabIndex = 37;
             // 
-            // contain
+            // btnXoaNV
             // 
-            this.contain.Controls.Add(this.grdNhanVien);
-            this.contain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contain.Location = new System.Drawing.Point(0, 159);
-            this.contain.Name = "contain";
-            this.contain.Size = new System.Drawing.Size(717, 188);
-            this.contain.TabIndex = 2;
+            this.btnXoaNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoaNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaNV.Location = new System.Drawing.Point(29, 49);
+            this.btnXoaNV.Name = "btnXoaNV";
+            this.btnXoaNV.Size = new System.Drawing.Size(140, 30);
+            this.btnXoaNV.TabIndex = 35;
+            this.btnXoaNV.Text = "&Xóa Nhân Viên";
+            this.btnXoaNV.UseVisualStyleBackColor = false;
+            // 
+            // btnThemNV
+            // 
+            this.btnThemNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNV.Location = new System.Drawing.Point(29, 13);
+            this.btnThemNV.Name = "btnThemNV";
+            this.btnThemNV.Size = new System.Drawing.Size(140, 30);
+            this.btnThemNV.TabIndex = 34;
+            this.btnThemNV.Text = "&Thêm Nhân Viên";
+            this.btnThemNV.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdateNV
+            // 
+            this.btnUpdateNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnUpdateNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateNV.Location = new System.Drawing.Point(29, 102);
+            this.btnUpdateNV.Name = "btnUpdateNV";
+            this.btnUpdateNV.Size = new System.Drawing.Size(140, 30);
+            this.btnUpdateNV.TabIndex = 36;
+            this.btnUpdateNV.Text = "&Sửa Thông Tin NV";
+            this.btnUpdateNV.UseVisualStyleBackColor = false;
             // 
             // grpDetails
             // 
@@ -106,6 +136,22 @@
             this.grpDetails.TabIndex = 35;
             this.grpDetails.TabStop = false;
             this.grpDetails.Text = "Register new user :";
+            // 
+            // dtpNgayBatDau
+            // 
+            this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayBatDau.Location = new System.Drawing.Point(368, 54);
+            this.dtpNgayBatDau.Name = "dtpNgayBatDau";
+            this.dtpNgayBatDau.Size = new System.Drawing.Size(140, 20);
+            this.dtpNgayBatDau.TabIndex = 30;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(368, 28);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(140, 20);
+            this.dtpNgaySinh.TabIndex = 30;
             // 
             // grbgioitinh
             // 
@@ -151,6 +197,21 @@
             this.lblNgaySinh.TabIndex = 25;
             this.lblNgaySinh.Text = "Ngày Sinh:";
             // 
+            // txbLuong
+            // 
+            this.txbLuong.Location = new System.Drawing.Point(368, 80);
+            this.txbLuong.Name = "txbLuong";
+            this.txbLuong.Size = new System.Drawing.Size(140, 20);
+            this.txbLuong.TabIndex = 4;
+            // 
+            // lbLuong
+            // 
+            this.lbLuong.Location = new System.Drawing.Point(282, 80);
+            this.lbLuong.Name = "lbLuong";
+            this.lbLuong.Size = new System.Drawing.Size(63, 23);
+            this.lbLuong.TabIndex = 23;
+            this.lbLuong.Text = "Mức lương:";
+            // 
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(78, 54);
@@ -181,72 +242,23 @@
             this.lblCMND.TabIndex = 19;
             this.lblCMND.Text = "CMND:";
             // 
-            // panel4
+            // bottomContain
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel4.Controls.Add(this.btnXoaNV);
-            this.panel4.Controls.Add(this.btnThemNV);
-            this.panel4.Controls.Add(this.btnUpdateNV);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(533, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(184, 159);
-            this.panel4.TabIndex = 37;
+            this.bottomContain.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bottomContain.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomContain.Location = new System.Drawing.Point(0, 375);
+            this.bottomContain.Name = "bottomContain";
+            this.bottomContain.Size = new System.Drawing.Size(717, 25);
+            this.bottomContain.TabIndex = 1;
             // 
-            // btnXoaNV
+            // contain
             // 
-            this.btnXoaNV.Location = new System.Drawing.Point(29, 49);
-            this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.Size = new System.Drawing.Size(140, 30);
-            this.btnXoaNV.TabIndex = 35;
-            this.btnXoaNV.Text = "&Xóa Nhân Viên";
-            // 
-            // btnThemNV
-            // 
-            this.btnThemNV.Location = new System.Drawing.Point(29, 13);
-            this.btnThemNV.Name = "btnThemNV";
-            this.btnThemNV.Size = new System.Drawing.Size(140, 30);
-            this.btnThemNV.TabIndex = 34;
-            this.btnThemNV.Text = "&Thêm Nhân Viên";
-            // 
-            // btnUpdateNV
-            // 
-            this.btnUpdateNV.Location = new System.Drawing.Point(29, 102);
-            this.btnUpdateNV.Name = "btnUpdateNV";
-            this.btnUpdateNV.Size = new System.Drawing.Size(140, 30);
-            this.btnUpdateNV.TabIndex = 36;
-            this.btnUpdateNV.Text = "&Sửa Thông Tin NV";
-            // 
-            // dtpNgaySinh
-            // 
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(368, 28);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(140, 20);
-            this.dtpNgaySinh.TabIndex = 30;
-            // 
-            // dtpNgayBatDau
-            // 
-            this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayBatDau.Location = new System.Drawing.Point(368, 54);
-            this.dtpNgayBatDau.Name = "dtpNgayBatDau";
-            this.dtpNgayBatDau.Size = new System.Drawing.Size(140, 20);
-            this.dtpNgayBatDau.TabIndex = 30;
-            // 
-            // lbLuong
-            // 
-            this.lbLuong.Location = new System.Drawing.Point(282, 80);
-            this.lbLuong.Name = "lbLuong";
-            this.lbLuong.Size = new System.Drawing.Size(63, 23);
-            this.lbLuong.TabIndex = 23;
-            this.lbLuong.Text = "Mức lương:";
-            // 
-            // txbLuong
-            // 
-            this.txbLuong.Location = new System.Drawing.Point(368, 80);
-            this.txbLuong.Name = "txbLuong";
-            this.txbLuong.Size = new System.Drawing.Size(140, 20);
-            this.txbLuong.TabIndex = 4;
+            this.contain.Controls.Add(this.grdNhanVien);
+            this.contain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contain.Location = new System.Drawing.Point(0, 159);
+            this.contain.Name = "contain";
+            this.contain.Size = new System.Drawing.Size(717, 216);
+            this.contain.TabIndex = 2;
             // 
             // grdNhanVien
             // 
@@ -255,7 +267,7 @@
             this.grdNhanVien.GridLines = true;
             this.grdNhanVien.Location = new System.Drawing.Point(0, 0);
             this.grdNhanVien.Name = "grdNhanVien";
-            this.grdNhanVien.Size = new System.Drawing.Size(717, 188);
+            this.grdNhanVien.Size = new System.Drawing.Size(717, 216);
             this.grdNhanVien.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.grdNhanVien.TabIndex = 36;
             this.grdNhanVien.UseCompatibleStateImageBehavior = false;
@@ -265,18 +277,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 372);
+            this.ClientSize = new System.Drawing.Size(717, 400);
             this.Controls.Add(this.contain);
             this.Controls.Add(this.bottomContain);
             this.Controls.Add(this.topContain);
             this.Name = "frmQuanLyNhanVien";
             this.Text = "Quản Lý Nhân Viên";
             this.topContain.ResumeLayout(false);
-            this.contain.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.grbgioitinh.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.contain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
