@@ -83,8 +83,8 @@
             this.flpBan.BackColor = System.Drawing.Color.Transparent;
             this.flpBan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flpBan.Controls.Add(this.btnBan1);
-            this.flpBan.Controls.Add(this.btnBan2);
             this.flpBan.Controls.Add(this.btnBan3);
+            this.flpBan.Controls.Add(this.btnBan2);
             this.flpBan.Controls.Add(this.btnThemBan);
             this.flpBan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpBan.Location = new System.Drawing.Point(0, 0);
@@ -107,7 +107,7 @@
             // btnBan2
             // 
             this.btnBan2.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBan2.Location = new System.Drawing.Point(122, 13);
+            this.btnBan2.Location = new System.Drawing.Point(231, 13);
             this.btnBan2.Name = "btnBan2";
             this.btnBan2.Size = new System.Drawing.Size(103, 100);
             this.btnBan2.TabIndex = 0;
@@ -117,7 +117,7 @@
             // btnBan3
             // 
             this.btnBan3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBan3.Location = new System.Drawing.Point(231, 13);
+            this.btnBan3.Location = new System.Drawing.Point(122, 13);
             this.btnBan3.Name = "btnBan3";
             this.btnBan3.Size = new System.Drawing.Size(103, 100);
             this.btnBan3.TabIndex = 0;

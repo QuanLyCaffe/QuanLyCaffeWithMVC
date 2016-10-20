@@ -19,5 +19,6 @@ namespace MVCController
         string m_adminName { get; set; }
         string m_password { get; set; }
         mAdmin.isAdmin m_isAdmin { get; set; }
+        bool CanModifyID { set; }
     }
 }

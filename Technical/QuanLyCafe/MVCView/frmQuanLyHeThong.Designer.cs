@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.top_parent = new System.Windows.Forms.Panel();
-            this.bottom_parent = new System.Windows.Forms.Panel();
-            this.containParent = new System.Windows.Forms.Panel();
-            this.grpDetails = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRemoveAdmin = new System.Windows.Forms.Button();
+            this.btnAddAdmin = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.grpAdmin = new System.Windows.Forms.GroupBox();
             this.grbSex = new System.Windows.Forms.GroupBox();
             this.rdNo = new System.Windows.Forms.RadioButton();
             this.rdYes = new System.Windows.Forms.RadioButton();
@@ -39,62 +41,80 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRemoveUser = new System.Windows.Forms.Button();
-            this.btnAddUser = new System.Windows.Forms.Button();
-            this.btnChangePassword = new System.Windows.Forms.Button();
-            this.grdUsers = new System.Windows.Forms.ListView();
+            this.bottom_parent = new System.Windows.Forms.Panel();
+            this.containParent = new System.Windows.Forms.Panel();
+            this.grdAdmin = new System.Windows.Forms.ListView();
             this.top_parent.SuspendLayout();
-            this.containParent.SuspendLayout();
-            this.grpDetails.SuspendLayout();
-            this.grbSex.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.grpAdmin.SuspendLayout();
+            this.grbSex.SuspendLayout();
+            this.containParent.SuspendLayout();
             this.SuspendLayout();
             // 
             // top_parent
             // 
             this.top_parent.Controls.Add(this.panel1);
-            this.top_parent.Controls.Add(this.grpDetails);
+            this.top_parent.Controls.Add(this.grpAdmin);
             this.top_parent.Dock = System.Windows.Forms.DockStyle.Top;
             this.top_parent.Location = new System.Drawing.Point(0, 0);
             this.top_parent.Name = "top_parent";
             this.top_parent.Size = new System.Drawing.Size(723, 140);
             this.top_parent.TabIndex = 0;
             // 
-            // bottom_parent
+            // panel1
             // 
-            this.bottom_parent.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bottom_parent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottom_parent.Location = new System.Drawing.Point(0, 339);
-            this.bottom_parent.Name = "bottom_parent";
-            this.bottom_parent.Size = new System.Drawing.Size(723, 25);
-            this.bottom_parent.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel1.Controls.Add(this.btnRemoveAdmin);
+            this.panel1.Controls.Add(this.btnAddAdmin);
+            this.panel1.Controls.Add(this.btnSave);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(520, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(203, 140);
+            this.panel1.TabIndex = 36;
             // 
-            // containParent
+            // btnRemoveAdmin
             // 
-            this.containParent.Controls.Add(this.grdUsers);
-            this.containParent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.containParent.Location = new System.Drawing.Point(0, 140);
-            this.containParent.Name = "containParent";
-            this.containParent.Size = new System.Drawing.Size(723, 199);
-            this.containParent.TabIndex = 2;
+            this.btnRemoveAdmin.Location = new System.Drawing.Point(41, 46);
+            this.btnRemoveAdmin.Name = "btnRemoveAdmin";
+            this.btnRemoveAdmin.Size = new System.Drawing.Size(140, 30);
+            this.btnRemoveAdmin.TabIndex = 35;
+            this.btnRemoveAdmin.Text = "&Remove User";
             // 
-            // grpDetails
+            // btnAddAdmin
             // 
-            this.grpDetails.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.grpDetails.Controls.Add(this.grbSex);
-            this.grpDetails.Controls.Add(this.txtPassword);
-            this.grpDetails.Controls.Add(this.lblLastName);
-            this.grpDetails.Controls.Add(this.txtUserName);
-            this.grpDetails.Controls.Add(this.lblFirstName);
-            this.grpDetails.Dock = System.Windows.Forms.DockStyle.Left;
-            this.grpDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grpDetails.Location = new System.Drawing.Point(0, 0);
-            this.grpDetails.Name = "grpDetails";
-            this.grpDetails.Size = new System.Drawing.Size(520, 140);
-            this.grpDetails.TabIndex = 35;
-            this.grpDetails.TabStop = false;
-            this.grpDetails.Text = "Register new user :";
+            this.btnAddAdmin.Location = new System.Drawing.Point(41, 10);
+            this.btnAddAdmin.Name = "btnAddAdmin";
+            this.btnAddAdmin.Size = new System.Drawing.Size(140, 30);
+            this.btnAddAdmin.TabIndex = 34;
+            this.btnAddAdmin.Text = "&Add New User";
+            this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(41, 99);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(140, 30);
+            this.btnSave.TabIndex = 36;
+            this.btnSave.Text = "&Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // grpAdmin
+            // 
+            this.grpAdmin.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.grpAdmin.Controls.Add(this.grbSex);
+            this.grpAdmin.Controls.Add(this.txtPassword);
+            this.grpAdmin.Controls.Add(this.lblLastName);
+            this.grpAdmin.Controls.Add(this.txtUserName);
+            this.grpAdmin.Controls.Add(this.lblFirstName);
+            this.grpAdmin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.grpAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpAdmin.Location = new System.Drawing.Point(0, 0);
+            this.grpAdmin.Name = "grpAdmin";
+            this.grpAdmin.Size = new System.Drawing.Size(520, 140);
+            this.grpAdmin.TabIndex = 35;
+            this.grpAdmin.TabStop = false;
+            this.grpAdmin.Text = "Register new user :";
             // 
             // grbSex
             // 
@@ -154,54 +174,36 @@
             this.lblFirstName.TabIndex = 19;
             this.lblFirstName.Text = "User Name:";
             // 
-            // panel1
+            // bottom_parent
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Controls.Add(this.btnRemoveUser);
-            this.panel1.Controls.Add(this.btnAddUser);
-            this.panel1.Controls.Add(this.btnChangePassword);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(520, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(203, 140);
-            this.panel1.TabIndex = 36;
+            this.bottom_parent.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bottom_parent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottom_parent.Location = new System.Drawing.Point(0, 339);
+            this.bottom_parent.Name = "bottom_parent";
+            this.bottom_parent.Size = new System.Drawing.Size(723, 25);
+            this.bottom_parent.TabIndex = 1;
             // 
-            // btnRemoveUser
+            // containParent
             // 
-            this.btnRemoveUser.Location = new System.Drawing.Point(41, 46);
-            this.btnRemoveUser.Name = "btnRemoveUser";
-            this.btnRemoveUser.Size = new System.Drawing.Size(140, 30);
-            this.btnRemoveUser.TabIndex = 35;
-            this.btnRemoveUser.Text = "&Remove User";
+            this.containParent.Controls.Add(this.grdAdmin);
+            this.containParent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.containParent.Location = new System.Drawing.Point(0, 140);
+            this.containParent.Name = "containParent";
+            this.containParent.Size = new System.Drawing.Size(723, 199);
+            this.containParent.TabIndex = 2;
             // 
-            // btnAddUser
+            // grdAdmin
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(41, 10);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(140, 30);
-            this.btnAddUser.TabIndex = 34;
-            this.btnAddUser.Text = "&Add New User";
-            // 
-            // btnChangePassword
-            // 
-            this.btnChangePassword.Location = new System.Drawing.Point(41, 99);
-            this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(140, 30);
-            this.btnChangePassword.TabIndex = 36;
-            this.btnChangePassword.Text = "&Change Password";
-            // 
-            // grdUsers
-            // 
-            this.grdUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdUsers.FullRowSelect = true;
-            this.grdUsers.GridLines = true;
-            this.grdUsers.Location = new System.Drawing.Point(0, 0);
-            this.grdUsers.Name = "grdUsers";
-            this.grdUsers.Size = new System.Drawing.Size(723, 199);
-            this.grdUsers.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.grdUsers.TabIndex = 36;
-            this.grdUsers.UseCompatibleStateImageBehavior = false;
-            this.grdUsers.View = System.Windows.Forms.View.Details;
+            this.grdAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdAdmin.FullRowSelect = true;
+            this.grdAdmin.GridLines = true;
+            this.grdAdmin.Location = new System.Drawing.Point(0, 0);
+            this.grdAdmin.Name = "grdAdmin";
+            this.grdAdmin.Size = new System.Drawing.Size(723, 199);
+            this.grdAdmin.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.grdAdmin.TabIndex = 36;
+            this.grdAdmin.UseCompatibleStateImageBehavior = false;
+            this.grdAdmin.View = System.Windows.Forms.View.Details;
             // 
             // frmQuanLyHeThong
             // 
@@ -214,11 +216,11 @@
             this.Name = "frmQuanLyHeThong";
             this.Text = "Quản Lý Hệ Thống";
             this.top_parent.ResumeLayout(false);
-            this.containParent.ResumeLayout(false);
-            this.grpDetails.ResumeLayout(false);
-            this.grpDetails.PerformLayout();
-            this.grbSex.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.grpAdmin.ResumeLayout(false);
+            this.grpAdmin.PerformLayout();
+            this.grbSex.ResumeLayout(false);
+            this.containParent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -229,7 +231,7 @@
         private System.Windows.Forms.Panel bottom_parent;
         private System.Windows.Forms.Panel containParent;
         private System.Windows.Forms.Panel panel1;
-        internal System.Windows.Forms.GroupBox grpDetails;
+        internal System.Windows.Forms.GroupBox grpAdmin;
         private System.Windows.Forms.GroupBox grbSex;
         internal System.Windows.Forms.RadioButton rdNo;
         internal System.Windows.Forms.RadioButton rdYes;
@@ -237,9 +239,9 @@
         internal System.Windows.Forms.Label lblLastName;
         internal System.Windows.Forms.TextBox txtUserName;
         internal System.Windows.Forms.Label lblFirstName;
-        internal System.Windows.Forms.Button btnRemoveUser;
-        internal System.Windows.Forms.Button btnAddUser;
-        internal System.Windows.Forms.Button btnChangePassword;
-        internal System.Windows.Forms.ListView grdUsers;
+        internal System.Windows.Forms.Button btnRemoveAdmin;
+        internal System.Windows.Forms.Button btnAddAdmin;
+        internal System.Windows.Forms.Button btnSave;
+        internal System.Windows.Forms.ListView grdAdmin;
     }
 }

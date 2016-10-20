@@ -104,6 +104,7 @@
             this.btnCafe.TabIndex = 0;
             this.btnCafe.Text = "Coffee";
             this.btnCafe.UseVisualStyleBackColor = true;
+            this.btnCafe.Click += new System.EventHandler(this.btnCafe_Click);
             // 
             // button2
             // 
@@ -114,6 +115,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Trà đào";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
