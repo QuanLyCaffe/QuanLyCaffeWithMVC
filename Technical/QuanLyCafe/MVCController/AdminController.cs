@@ -21,15 +21,20 @@ namespace MVCController
             m_listAdmin = _listaAdmin;
             m_adminView.SetController(this);
         }
+
+        // show view = model selected
         private void updateAdminViewDetailValues(Admin _admin)
         {
+            this.m_adminView.m_adminID = _admin.Id;
             this.m_adminView.m_adminName = _admin.AdminName;
             this.m_adminView.m_password =_admin.Password;
             this.m_adminView.m_isAdmin = _admin.IsAdmin;
         }
+
+        // set model = view
         private void updateAdminWithViewValues(Admin _admin)
         {
-            _admin.Id = "10";
+            _admin.Id = m_adminView.m_adminID; ;
             _admin.AdminName = this.m_adminView.m_adminName;
             _admin.Password = this.m_adminView.m_password;
             _admin.IsAdmin = this.m_adminView.m_isAdmin;    
@@ -41,6 +46,14 @@ namespace MVCController
                 m_adminView.AddUserToGrid(var);
 
             m_adminView.SetSelectedUserInGrid((Admin)m_listAdmin[0]);
+        }
+
+        public void ResetView()
+        {
+            m_selectedAdmin = new Admin("", "", "", Admin.isAdmin.Male);
+
+            this.updateAdminViewDetailValues(m_selectedAdmin);
+            this.m_adminView.CanModifyID = false;
         }
 
         public void SelectedUserChanged(string selectedUserId)
@@ -68,7 +81,32 @@ namespace MVCController
 
         public void RemoveUser()
         {
-            
+            string id = this.m_adminView.GetIdOfSelectedUserInGrid();
+            Admin userToRemove = null;
+
+            if (id != "")
+            {
+                foreach (Admin var in this.m_listAdmin)
+                {
+                    if (var.Id == id)
+                    {
+                        userToRemove = var;
+                        break;
+                    }
+                }
+
+                if (userToRemove != null)
+                {
+                    int newSelectedIndex = this.m_listAdmin.IndexOf(userToRemove);
+                    this.m_listAdmin.Remove(userToRemove);
+                    this.m_adminView.RemoveUserFromGrid(userToRemove);
+
+                    if (newSelectedIndex > -1 && newSelectedIndex < m_listAdmin.Count)
+                    {
+                        this.m_adminView.SetSelectedUserInGrid((Admin)m_listAdmin[newSelectedIndex]);
+                    }
+                }
+            }
         }
 
         public void Save()
@@ -87,6 +125,7 @@ namespace MVCController
             }
             m_adminView.SetSelectedUserInGrid(m_selectedAdmin);
             this.m_adminView.CanModifyID = false;
+            //ResetView();
         }
     }
 }

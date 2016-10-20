@@ -44,6 +44,8 @@
             this.bottom_parent = new System.Windows.Forms.Panel();
             this.containParent = new System.Windows.Forms.Panel();
             this.grdAdmin = new System.Windows.Forms.ListView();
+            this.txbAdminID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.top_parent.SuspendLayout();
             this.panel1.SuspendLayout();
             this.grpAdmin.SuspendLayout();
@@ -80,6 +82,7 @@
             this.btnRemoveAdmin.Size = new System.Drawing.Size(140, 30);
             this.btnRemoveAdmin.TabIndex = 35;
             this.btnRemoveAdmin.Text = "&Remove User";
+            this.btnRemoveAdmin.Click += new System.EventHandler(this.btnRemoveAdmin_Click);
             // 
             // btnAddAdmin
             // 
@@ -102,6 +105,8 @@
             // grpAdmin
             // 
             this.grpAdmin.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.grpAdmin.Controls.Add(this.txbAdminID);
+            this.grpAdmin.Controls.Add(this.label1);
             this.grpAdmin.Controls.Add(this.grbSex);
             this.grpAdmin.Controls.Add(this.txtPassword);
             this.grpAdmin.Controls.Add(this.lblLastName);
@@ -109,21 +114,23 @@
             this.grpAdmin.Controls.Add(this.lblFirstName);
             this.grpAdmin.Dock = System.Windows.Forms.DockStyle.Left;
             this.grpAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAdmin.Location = new System.Drawing.Point(0, 0);
             this.grpAdmin.Name = "grpAdmin";
             this.grpAdmin.Size = new System.Drawing.Size(520, 140);
             this.grpAdmin.TabIndex = 35;
             this.grpAdmin.TabStop = false;
-            this.grpAdmin.Text = "Register new user :";
+            this.grpAdmin.Text = "Register New User :";
             // 
             // grbSex
             // 
             this.grbSex.Controls.Add(this.rdNo);
             this.grbSex.Controls.Add(this.rdYes);
+            this.grbSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbSex.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.grbSex.Location = new System.Drawing.Point(21, 79);
+            this.grbSex.Location = new System.Drawing.Point(264, 19);
             this.grbSex.Name = "grbSex";
-            this.grbSex.Size = new System.Drawing.Size(276, 54);
+            this.grbSex.Size = new System.Drawing.Size(250, 59);
             this.grbSex.TabIndex = 29;
             this.grbSex.TabStop = false;
             this.grbSex.Text = "Admin";
@@ -146,31 +153,35 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(79, 54);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(96, 88);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(128, 20);
+            this.txtPassword.Size = new System.Drawing.Size(132, 22);
             this.txtPassword.TabIndex = 4;
             // 
             // lblLastName
             // 
-            this.lblLastName.Location = new System.Drawing.Point(18, 57);
+            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(12, 91);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(63, 23);
+            this.lblLastName.Size = new System.Drawing.Size(78, 23);
             this.lblLastName.TabIndex = 23;
             this.lblLastName.Text = "Password:";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(79, 28);
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(96, 56);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(128, 20);
+            this.txtUserName.Size = new System.Drawing.Size(132, 22);
             this.txtUserName.TabIndex = 1;
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Location = new System.Drawing.Point(18, 31);
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(12, 59);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(63, 23);
+            this.lblFirstName.Size = new System.Drawing.Size(84, 23);
             this.lblFirstName.TabIndex = 19;
             this.lblFirstName.Text = "User Name:";
             // 
@@ -178,7 +189,7 @@
             // 
             this.bottom_parent.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bottom_parent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottom_parent.Location = new System.Drawing.Point(0, 339);
+            this.bottom_parent.Location = new System.Drawing.Point(0, 372);
             this.bottom_parent.Name = "bottom_parent";
             this.bottom_parent.Size = new System.Drawing.Size(723, 25);
             this.bottom_parent.TabIndex = 1;
@@ -189,27 +200,46 @@
             this.containParent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.containParent.Location = new System.Drawing.Point(0, 140);
             this.containParent.Name = "containParent";
-            this.containParent.Size = new System.Drawing.Size(723, 199);
+            this.containParent.Size = new System.Drawing.Size(723, 232);
             this.containParent.TabIndex = 2;
             // 
             // grdAdmin
             // 
             this.grdAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdAdmin.FullRowSelect = true;
             this.grdAdmin.GridLines = true;
             this.grdAdmin.Location = new System.Drawing.Point(0, 0);
             this.grdAdmin.Name = "grdAdmin";
-            this.grdAdmin.Size = new System.Drawing.Size(723, 199);
+            this.grdAdmin.Size = new System.Drawing.Size(723, 232);
             this.grdAdmin.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.grdAdmin.TabIndex = 36;
             this.grdAdmin.UseCompatibleStateImageBehavior = false;
             this.grdAdmin.View = System.Windows.Forms.View.Details;
+            this.grdAdmin.SelectedIndexChanged += new System.EventHandler(this.grdAdmin_SelectedIndexChanged);
+            // 
+            // txbAdminID
+            // 
+            this.txbAdminID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAdminID.Location = new System.Drawing.Point(96, 24);
+            this.txbAdminID.Name = "txbAdminID";
+            this.txbAdminID.Size = new System.Drawing.Size(132, 22);
+            this.txbAdminID.TabIndex = 30;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 23);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "User ID:";
             // 
             // frmQuanLyHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 364);
+            this.ClientSize = new System.Drawing.Size(723, 397);
             this.Controls.Add(this.containParent);
             this.Controls.Add(this.bottom_parent);
             this.Controls.Add(this.top_parent);
@@ -243,5 +273,7 @@
         internal System.Windows.Forms.Button btnAddAdmin;
         internal System.Windows.Forms.Button btnSave;
         internal System.Windows.Forms.ListView grdAdmin;
+        internal System.Windows.Forms.TextBox txbAdminID;
+        internal System.Windows.Forms.Label label1;
     }
 }

@@ -16,6 +16,7 @@ namespace MVCController
         string GetIdOfSelectedUserInGrid();
         void SetSelectedUserInGrid(Admin _admin);
 
+        string m_adminID { get; set; }
         string m_adminName { get; set; }
         string m_password { get; set; }
         Admin.isAdmin m_isAdmin { get; set; }

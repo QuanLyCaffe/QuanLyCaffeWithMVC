@@ -29,9 +29,7 @@ namespace MVCView
             this.m_isAdmin = Admin.isAdmin.Male;
 
         }
-        #region Event_Handler...
 
-        #endregion
 
         #region Implemention...
         public void SetController(AdminController _adminController)
@@ -56,7 +54,6 @@ namespace MVCView
         {
             ListViewItem parent;
             parent = this.grdAdmin.Items.Add(_admin.Id);
-            parent.SubItems.Add(_admin.Id);
             parent.SubItems.Add(_admin.AdminName);
             parent.SubItems.Add(_admin.Password);
             parent.SubItems.Add(Enum.GetName(typeof(Admin.isAdmin), _admin.IsAdmin));
@@ -87,12 +84,29 @@ namespace MVCView
 
         public void RemoveUserFromGrid(Admin _admin)
         {
-            throw new NotImplementedException();
+            ListViewItem rowToRemove = null;
+
+            foreach (ListViewItem row in this.grdAdmin.Items)
+            {
+                if (row.Text == _admin.Id)
+                {
+                    rowToRemove = row;
+                }
+            }
+
+            if (rowToRemove != null)
+            {
+                this.grdAdmin.Items.Remove(rowToRemove);
+                this.grdAdmin.Focus();
+            }
         }
 
         public string GetIdOfSelectedUserInGrid()
         {
-            throw new NotImplementedException();
+            if (this.grdAdmin.SelectedItems.Count > 0)
+                return this.grdAdmin.SelectedItems[0].Text;
+            else
+                return "";
         }
 
         public void SetSelectedUserInGrid(Admin _admin)
@@ -114,7 +128,7 @@ namespace MVCView
             }
             set
             {
-                value = txtUserName.Text;
+                txtUserName.Text = value;
             }
         }
 
@@ -126,7 +140,7 @@ namespace MVCView
             }
             set
             {
-                value = txtPassword.Text;
+               txtPassword.Text = value;
             }
         }
 
@@ -157,7 +171,19 @@ namespace MVCView
 
         public bool CanModifyID
         {
-            set { }
+            set { this.txbAdminID.Enabled = value; }
+        }
+
+        public string m_adminID
+        {
+            get
+            {
+                return txbAdminID.Text;
+            }
+            set
+            {
+                txbAdminID.Text = value;
+            }
         }
 
         #endregion
@@ -170,6 +196,19 @@ namespace MVCView
         private void btnSave_Click(object sender, EventArgs e)
         {
             m_adminController.Save();
+        }
+
+        private void grdAdmin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.grdAdmin.SelectedItems.Count > 0)
+            {
+                this.m_adminController.SelectedUserChanged(this.grdAdmin.SelectedItems[0].Text);
+            }
+        }
+
+        private void btnRemoveAdmin_Click(object sender, EventArgs e)
+        {
+            m_adminController.RemoveUser();
         }
     }
 }
