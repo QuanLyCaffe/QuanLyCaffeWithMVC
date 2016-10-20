@@ -33,8 +33,8 @@
             this.contain = new System.Windows.Forms.Panel();
             this.flpBan = new System.Windows.Forms.FlowLayoutPanel();
             this.btnBan1 = new System.Windows.Forms.Button();
-            this.btnBan2 = new System.Windows.Forms.Button();
             this.btnBan3 = new System.Windows.Forms.Button();
+            this.btnBan2 = new System.Windows.Forms.Button();
             this.btnThemBan = new System.Windows.Forms.Button();
             this.topContain = new System.Windows.Forms.Panel();
             this.lbldate = new System.Windows.Forms.Label();
@@ -104,16 +104,6 @@
             this.btnBan1.Text = "Bàn 1";
             this.btnBan1.UseVisualStyleBackColor = true;
             // 
-            // btnBan2
-            // 
-            this.btnBan2.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBan2.Location = new System.Drawing.Point(231, 13);
-            this.btnBan2.Name = "btnBan2";
-            this.btnBan2.Size = new System.Drawing.Size(103, 100);
-            this.btnBan2.TabIndex = 0;
-            this.btnBan2.Text = "Bàn 2";
-            this.btnBan2.UseVisualStyleBackColor = true;
-            // 
             // btnBan3
             // 
             this.btnBan3.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,6 +113,16 @@
             this.btnBan3.TabIndex = 0;
             this.btnBan3.Text = "Bàn 3";
             this.btnBan3.UseVisualStyleBackColor = true;
+            // 
+            // btnBan2
+            // 
+            this.btnBan2.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBan2.Location = new System.Drawing.Point(231, 13);
+            this.btnBan2.Name = "btnBan2";
+            this.btnBan2.Size = new System.Drawing.Size(103, 100);
+            this.btnBan2.TabIndex = 0;
+            this.btnBan2.Text = "Bàn 2";
+            this.btnBan2.UseVisualStyleBackColor = true;
             // 
             // btnThemBan
             // 

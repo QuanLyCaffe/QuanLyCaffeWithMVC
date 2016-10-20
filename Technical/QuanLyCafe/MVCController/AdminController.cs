@@ -33,7 +33,8 @@ namespace MVCController
         }
 
         // set model = view
-        private void updateAdminWithViewValues(Admin _admin)
+        // selected admin = view in data
+        private void GetValuesFromView(Admin _admin)
         {
             _admin.Id = m_adminView.m_adminID; 
             _admin.AdminName = this.m_adminView.m_adminName;
@@ -84,7 +85,7 @@ namespace MVCController
         public void RemoveUser()
         {
             string id = this.m_adminView.GetIdOfSelectedUserInGrid();
-            Admin userToRemove = null;
+            Admin adminToRemove = null;
 
             if (id != "")
             {
@@ -92,16 +93,16 @@ namespace MVCController
                 {
                     if (var.Id == id)
                     {
-                        userToRemove = var;
+                        adminToRemove = var;
                         break;
                     }
                 }
 
-                if (userToRemove != null)
+                if (adminToRemove != null)
                 {
-                    int newSelectedIndex = this.m_listAdmin.IndexOf(userToRemove);
-                    this.m_listAdmin.Remove(userToRemove);
-                    this.m_adminView.RemoveUserFromGrid(userToRemove);
+                    int newSelectedIndex = this.m_listAdmin.IndexOf(adminToRemove);
+                    this.m_listAdmin.Remove(adminToRemove);
+                    this.m_adminView.RemoveUserFromGrid(adminToRemove);
 
                     if (newSelectedIndex > -1 && newSelectedIndex < m_listAdmin.Count)
                     {
@@ -113,7 +114,7 @@ namespace MVCController
 
         public void Save()
         {
-            updateAdminWithViewValues(m_selectedAdmin);
+            GetValuesFromView(m_selectedAdmin);
             if (!this.m_listAdmin.Contains(m_selectedAdmin))
             {
                 // Add new user

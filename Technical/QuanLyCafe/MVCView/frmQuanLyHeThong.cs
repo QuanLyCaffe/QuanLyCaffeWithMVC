@@ -18,6 +18,7 @@ namespace MVCView
         {
             InitializeComponent();
             ResetView();
+            SetActiveButton(false);
         }
 
         private AdminController m_adminController;
@@ -27,7 +28,6 @@ namespace MVCView
             this.m_adminName = "";
             this.m_password = "";
             this.m_isAdmin = Admin.isAdmin.Male;
-
         }
 
 
@@ -111,6 +111,7 @@ namespace MVCView
 
         public void SetSelectedUserInGrid(Admin _admin)
         {
+            SetActiveButton(false);
             foreach (ListViewItem row in this.grdAdmin.Items)
             {
                 if (row.Text == _admin.Id)
@@ -190,11 +191,13 @@ namespace MVCView
 
         private void btnAddAdmin_Click(object sender, EventArgs e)
         {
+            SetActiveButton(true);
             m_adminController.AddNewUser();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            SetActiveButton(false);
             m_adminController.Save();
         }
 
@@ -209,6 +212,25 @@ namespace MVCView
         private void btnRemoveAdmin_Click(object sender, EventArgs e)
         {
             m_adminController.RemoveUser();
+        }
+
+        private void SetActiveButton(bool clickedActive)
+        {
+            btnAddAdmin.Enabled = !clickedActive;
+            btnRemoveAdmin.Enabled = !clickedActive;
+            btnUpdateAdmin.Enabled = !clickedActive;
+            btnSave.Enabled = clickedActive;
+            btnCancle.Enabled = clickedActive;
+        }
+       
+        private void btnCancle_Click(object sender, EventArgs e)
+        {
+            SetActiveButton(false);
+        }
+
+        private void btnUpdateAdmin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
