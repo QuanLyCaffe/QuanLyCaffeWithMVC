@@ -5,19 +5,18 @@ using System.Text;
 
 namespace WinFormMVC.Model
 {
-    public class mAdmin
+    public class Admin
     {
-
-        public mAdmin()
+        public Admin()
         {
 
         }
-        public mAdmin(string _id, string _name,string _password,isAdmin _isAdmin)
+        public Admin(string _id, string _name,string _password,isAdmin _isAdmin)
         {
             this.m_id = _id;
             this.m_adminName = _name;
             this.m_password = _password;
-            this.m_admin = _isAdmin;
+            this.m_isAdmin = _isAdmin;
         }
         public enum isAdmin
         {
@@ -34,7 +33,7 @@ namespace WinFormMVC.Model
         }
         private string m_adminName;
         private string m_password;
-        private isAdmin m_admin;
+        private isAdmin m_isAdmin;
 
         public string AdminName
         {
@@ -75,16 +74,16 @@ namespace WinFormMVC.Model
                 }
             }
         }
-        public isAdmin Admin
+        public isAdmin IsAdmin
         {
             get
             {
-                return m_admin;
+                return m_isAdmin;
             }
 
             set
             {
-                m_admin = value;
+                m_isAdmin = value;
             }
         }
     }

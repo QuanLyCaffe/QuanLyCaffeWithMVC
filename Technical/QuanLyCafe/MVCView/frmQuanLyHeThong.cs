@@ -26,7 +26,7 @@ namespace MVCView
         {
             this.m_adminName = "";
             this.m_password = "";
-            this.m_isAdmin = mAdmin.isAdmin.Male;
+            this.m_isAdmin = Admin.isAdmin.Male;
 
         }
         #region Event_Handler...
@@ -52,18 +52,18 @@ namespace MVCView
             this.grdAdmin.Items.Clear();
         }
 
-        public void AddUserToGrid(mAdmin _admin)
+        public void AddUserToGrid(Admin _admin)
         {
             ListViewItem parent;
             parent = this.grdAdmin.Items.Add(_admin.Id);
             parent.SubItems.Add(_admin.Id);
             parent.SubItems.Add(_admin.AdminName);
             parent.SubItems.Add(_admin.Password);
-            parent.SubItems.Add(Enum.GetName(typeof(mAdmin.isAdmin), _admin.Admin));
+            parent.SubItems.Add(Enum.GetName(typeof(Admin.isAdmin), _admin.IsAdmin));
         }
 
         //when click save
-        public void UpdateGridWithChangedUser(mAdmin _admin)
+        public void UpdateGridWithChangedUser(Admin _admin)
         {
             ListViewItem rowToUpdate = null;
 
@@ -81,11 +81,11 @@ namespace MVCView
                 rowToUpdate.SubItems[1].Text = _admin.Id;
                 rowToUpdate.SubItems[2].Text = _admin.AdminName;
                 rowToUpdate.SubItems[3].Text = _admin.Password;
-                rowToUpdate.SubItems[4].Text = Enum.GetName(typeof(mAdmin.isAdmin), _admin.Admin);
+                rowToUpdate.SubItems[4].Text = Enum.GetName(typeof(Admin.isAdmin), _admin.IsAdmin);
             }
         }
 
-        public void RemoveUserFromGrid(mAdmin _admin)
+        public void RemoveUserFromGrid(Admin _admin)
         {
             throw new NotImplementedException();
         }
@@ -95,7 +95,7 @@ namespace MVCView
             throw new NotImplementedException();
         }
 
-        public void SetSelectedUserInGrid(mAdmin _admin)
+        public void SetSelectedUserInGrid(Admin _admin)
         {
             foreach (ListViewItem row in this.grdAdmin.Items)
             {
@@ -130,22 +130,22 @@ namespace MVCView
             }
         }
 
-        public mAdmin.isAdmin m_isAdmin
+        public Admin.isAdmin m_isAdmin
         {
             get
             {
                 if(rdNo.Checked)
                 {
-                    return mAdmin.isAdmin.Female;
+                    return Admin.isAdmin.Female;
                 }
                 else
                 {
-                    return mAdmin.isAdmin.Male;
+                    return Admin.isAdmin.Male;
                 }
             }
             set
             {
-                if(value == mAdmin.isAdmin.Male)
+                if(value == Admin.isAdmin.Male)
                 {
                     rdYes.Checked = true;
                 }else

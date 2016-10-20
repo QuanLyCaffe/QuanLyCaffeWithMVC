@@ -42,7 +42,7 @@ namespace UseMVCApplication
 
 
             IList listAdminTest = new ArrayList();
-            listAdminTest.Add(new mAdmin("id01", "viet", "1234", mAdmin.isAdmin.Male));
+            listAdminTest.Add(new Admin("id01", "viet", "1234", Admin.isAdmin.Male));
             frmQuanLyHeThong frmAdminView = new frmQuanLyHeThong();
             frmAdminView.Visible = false;
 

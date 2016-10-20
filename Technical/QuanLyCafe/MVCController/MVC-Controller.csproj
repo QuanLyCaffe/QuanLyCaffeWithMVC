@@ -37,8 +37,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminController.cs" />
-    <Compile Include="IAdminView.cs" />
-    <Compile Include="IUsersView.cs" />
+    <Compile Include="Interface\IAdminView.cs" />
+    <Compile Include="Interface\IUsersView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserController.cs" />
   </ItemGroup>
@@ -49,8 +49,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Controller.cd" />
+    <None Include="diagram\Controller.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
