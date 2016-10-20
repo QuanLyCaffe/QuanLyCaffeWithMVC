@@ -12,6 +12,7 @@ namespace MVCController
         private Admin m_selectedAdmin;
         private IAdminView m_adminView;
         private IList m_listAdmin;
+
         public AdminController()
         {
         }
@@ -34,7 +35,7 @@ namespace MVCController
         // set model = view
         private void updateAdminWithViewValues(Admin _admin)
         {
-            _admin.Id = m_adminView.m_adminID; ;
+            _admin.Id = m_adminView.m_adminID; 
             _admin.AdminName = this.m_adminView.m_adminName;
             _admin.Password = this.m_adminView.m_password;
             _admin.IsAdmin = this.m_adminView.m_isAdmin;    
@@ -76,7 +77,8 @@ namespace MVCController
             m_selectedAdmin = new Admin("","","",Admin.isAdmin.Male);
 
             this.updateAdminViewDetailValues(m_selectedAdmin);
-            this.m_adminView.CanModifyID = true;
+            this.m_adminView.CanModifyID = false;
+            m_adminView.m_adminID = "ADMIN_0" + m_listAdmin.Count+1;
         }
 
         public void RemoveUser()
@@ -125,7 +127,6 @@ namespace MVCController
             }
             m_adminView.SetSelectedUserInGrid(m_selectedAdmin);
             this.m_adminView.CanModifyID = false;
-            //ResetView();
         }
     }
 }
