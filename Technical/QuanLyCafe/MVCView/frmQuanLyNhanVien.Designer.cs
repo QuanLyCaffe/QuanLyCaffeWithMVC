@@ -82,7 +82,7 @@
             // btnXoaNV
             // 
             this.btnXoaNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaNV.Location = new System.Drawing.Point(29, 49);
             this.btnXoaNV.Name = "btnXoaNV";
@@ -94,7 +94,7 @@
             // btnThemNV
             // 
             this.btnThemNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNV.Location = new System.Drawing.Point(29, 13);
             this.btnThemNV.Name = "btnThemNV";
@@ -106,7 +106,7 @@
             // btnUpdateNV
             // 
             this.btnUpdateNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnUpdateNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateNV.Location = new System.Drawing.Point(29, 102);
             this.btnUpdateNV.Name = "btnUpdateNV";

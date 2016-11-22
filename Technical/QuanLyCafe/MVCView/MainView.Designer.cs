@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bottomContain = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,31 +38,28 @@
             this.btnQuanLyNV = new System.Windows.Forms.Button();
             this.btnBaoCao = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.menuStrip1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.lblStatusLogin = new System.Windows.Forms.Label();
+            this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýBànToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýNguyênVậtLiệuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýNhậnViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoThốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbWelcome = new System.Windows.Forms.Label();
             this.bottomContain.SuspendLayout();
             this.panel2.SuspendLayout();
             this.lgpContainButton.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
             // 
             // bottomContain
             // 
-            this.bottomContain.BackColor = System.Drawing.Color.Transparent;
+            this.bottomContain.BackColor = System.Drawing.Color.DimGray;
+            this.bottomContain.Controls.Add(this.lblStatusLogin);
             this.bottomContain.Controls.Add(this.lblTitle);
             this.bottomContain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bottomContain.Location = new System.Drawing.Point(0, 373);
@@ -115,6 +110,7 @@
             // 
             // btnAdmin
             // 
+            this.btnAdmin.BackColor = System.Drawing.Color.White;
             this.btnAdmin.BackgroundImage = global::MVCView.Properties.Resources.system;
             this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdmin.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,10 +121,12 @@
             this.btnAdmin.TabIndex = 0;
             this.btnAdmin.Text = "Quản lý hệ thống";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnQLBan
             // 
+            this.btnQLBan.BackColor = System.Drawing.Color.White;
             this.btnQLBan.BackgroundImage = global::MVCView.Properties.Resources.table;
             this.btnQLBan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQLBan.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,10 +137,12 @@
             this.btnQLBan.TabIndex = 0;
             this.btnQLBan.Text = "Quản Lý Bàn";
             this.btnQLBan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnQLBan.UseVisualStyleBackColor = true;
+            this.btnQLBan.UseVisualStyleBackColor = false;
+            this.btnQLBan.Click += new System.EventHandler(this.btnQLBan_Click);
             // 
             // btnQLNguyenVatLieu
             // 
+            this.btnQLNguyenVatLieu.BackColor = System.Drawing.Color.White;
             this.btnQLNguyenVatLieu.BackgroundImage = global::MVCView.Properties.Resources.Matiral;
             this.btnQLNguyenVatLieu.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLNguyenVatLieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -152,10 +152,11 @@
             this.btnQLNguyenVatLieu.TabIndex = 0;
             this.btnQLNguyenVatLieu.Text = "Quản lý nguyên, vật liệu";
             this.btnQLNguyenVatLieu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnQLNguyenVatLieu.UseVisualStyleBackColor = true;
+            this.btnQLNguyenVatLieu.UseVisualStyleBackColor = false;
             // 
             // btnQuanLyNV
             // 
+            this.btnQuanLyNV.BackColor = System.Drawing.Color.White;
             this.btnQuanLyNV.BackgroundImage = global::MVCView.Properties.Resources.user;
             this.btnQuanLyNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuanLyNV.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -166,10 +167,11 @@
             this.btnQuanLyNV.TabIndex = 0;
             this.btnQuanLyNV.Text = "Quản lý nhân viên ";
             this.btnQuanLyNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnQuanLyNV.UseVisualStyleBackColor = true;
+            this.btnQuanLyNV.UseVisualStyleBackColor = false;
             // 
             // btnBaoCao
             // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.White;
             this.btnBaoCao.BackgroundImage = global::MVCView.Properties.Resources.report;
             this.btnBaoCao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBaoCao.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -180,10 +182,11 @@
             this.btnBaoCao.TabIndex = 0;
             this.btnBaoCao.Text = "Báo cáo, thống kê";
             this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBaoCao.UseVisualStyleBackColor = true;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.White;
             this.btnExit.BackgroundImage = global::MVCView.Properties.Resources.shutdown;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,7 +197,102 @@
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Thoát";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hệThốngToolStripMenuItem,
+            this.quảnLýToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(653, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // lblStatusLogin
+            // 
+            this.lblStatusLogin.AutoSize = true;
+            this.lblStatusLogin.Location = new System.Drawing.Point(3, 7);
+            this.lblStatusLogin.Name = "lblStatusLogin";
+            this.lblStatusLogin.Size = new System.Drawing.Size(205, 13);
+            this.lblStatusLogin.TabIndex = 1;
+            this.lblStatusLogin.Text = "Vui lòng đăng nhập để sử dụng hệ thống!";
+            // 
+            // hệThốngToolStripMenuItem
+            // 
+            this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.đăngNhậpToolStripMenuItem,
+            this.đăngXuấtToolStripMenuItem,
+            this.thoátToolStripMenuItem});
+            this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
+            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.hệThốngToolStripMenuItem.Text = "Hệ thống";
+            // 
+            // đăngNhậpToolStripMenuItem
+            // 
+            this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngNhậpToolStripMenuItem.Text = "Đăng Nhập";
+            // 
+            // đăngXuấtToolStripMenuItem
+            // 
+            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
+            // 
+            // thoátToolStripMenuItem
+            // 
+            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.thoátToolStripMenuItem.Text = "Thoát";
+            // 
+            // quảnLýToolStripMenuItem
+            // 
+            this.quảnLýToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLýBànToolStripMenuItem,
+            this.quảnLýNguyênVậtLiệuToolStripMenuItem,
+            this.quảnLýNhậnViênToolStripMenuItem,
+            this.báoCáoThốngKêToolStripMenuItem});
+            this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
+            this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.quảnLýToolStripMenuItem.Text = "Quản Lý";
+            // 
+            // quảnLýBànToolStripMenuItem
+            // 
+            this.quảnLýBànToolStripMenuItem.Name = "quảnLýBànToolStripMenuItem";
+            this.quảnLýBànToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.quảnLýBànToolStripMenuItem.Text = "Quản Lý Bàn";
+            // 
+            // quảnLýNguyênVậtLiệuToolStripMenuItem
+            // 
+            this.quảnLýNguyênVậtLiệuToolStripMenuItem.Name = "quảnLýNguyênVậtLiệuToolStripMenuItem";
+            this.quảnLýNguyênVậtLiệuToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.quảnLýNguyênVậtLiệuToolStripMenuItem.Text = "Quản Lý Nguyên,Vật Liệu";
+            // 
+            // quảnLýNhậnViênToolStripMenuItem
+            // 
+            this.quảnLýNhậnViênToolStripMenuItem.Name = "quảnLýNhậnViênToolStripMenuItem";
+            this.quảnLýNhậnViênToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.quảnLýNhậnViênToolStripMenuItem.Text = "Quản Lý Nhận Viên";
+            // 
+            // báoCáoThốngKêToolStripMenuItem
+            // 
+            this.báoCáoThốngKêToolStripMenuItem.Name = "báoCáoThốngKêToolStripMenuItem";
+            this.báoCáoThốngKêToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.báoCáoThốngKêToolStripMenuItem.Text = "Báo Cáo,Thống Kê";
+            // 
+            // lbWelcome
+            // 
+            this.lbWelcome.AutoSize = true;
+            this.lbWelcome.BackColor = System.Drawing.SystemColors.Control;
+            this.lbWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWelcome.Location = new System.Drawing.Point(476, 5);
+            this.lbWelcome.Name = "lbWelcome";
+            this.lbWelcome.Size = new System.Drawing.Size(95, 16);
+            this.lbWelcome.TabIndex = 3;
+            this.lbWelcome.Text = "Welcome,Viet ";
             // 
             // MainView
             // 
@@ -203,18 +301,20 @@
             this.BackgroundImage = global::MVCView.Properties.Resources.bg1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(653, 398);
+            this.Controls.Add(this.lbWelcome);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.bottomContain);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainView";
             this.Text = "Hệ Thống Quản Lý";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Load += new System.EventHandler(this.MainView_Load);
             this.bottomContain.ResumeLayout(false);
             this.bottomContain.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.lgpContainButton.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,8 +323,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.Panel bottomContain;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel panel2;
@@ -235,5 +333,17 @@
         private System.Windows.Forms.Button btnQuanLyNV;
         private System.Windows.Forms.Button btnBaoCao;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Label lblStatusLogin;
+        private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngNhậpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýBànToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýNguyênVậtLiệuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýNhậnViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoThốngKêToolStripMenuItem;
+        private System.Windows.Forms.Label lbWelcome;
     }
 }

@@ -7,7 +7,6 @@ using System.Collections;
 using  WinFormMVC.Model;
 using  WinFormMVC.View;
 using  WinFormMVC.Controller;
-using MVCController;
 using MVCView;
 
 
@@ -21,9 +20,7 @@ namespace UseMVCApplication
         [STAThread]
         static void Main()
         {
-            //UsersView view = new UsersView();
-            //view.Visible = false;
-
+            ScreenManager.GetInstance();
             //// Add some dummy data
             //IList users = new ArrayList();
             //users.Add(new User("Vladimir", "Putin", "122", "Government of Russia", User.SexOfPerson.Male));
@@ -35,21 +32,21 @@ namespace UseMVCApplication
             //users.Add(new User("Nikolas", "Sarkozy", "128", "Government of France", User.SexOfPerson.Male));
             //users.Add(new User("Silvio", "Berlusconi", "129", "Government of Italy", User.SexOfPerson.Male));
             //users.Add(new User("Yoshihiko", "Noda", "130", "Government of Japan", User.SexOfPerson.Male));
-
+            //UsersView view = new UsersView();
+            //view.Visible = false;
             //UsersController controller = new UsersController(view, users);
             //controller.LoadView();
             //view.ShowDialog();
 
-
             IList listAdminTest = new ArrayList();
-            listAdminTest.Add(new Admin("id01", "viet", "1234", Admin.isAdmin.Male));
-            frmQuanLyHeThong frmAdminView = new frmQuanLyHeThong();
-            frmAdminView.Visible = false;
+            listAdminTest.Add(new Admin("id01", "", "", Admin.isAdmin.Male));
 
-            AdminController adminController = new AdminController(frmAdminView, listAdminTest);
+            ILogin loginView = ScreenManager.GetInstance().m_login;
+            LoginController loginController = new LoginController(loginView,listAdminTest);
 
-            adminController.LoadView();
-            frmAdminView.ShowDialog();
+            //ScreenManager.GetInstance().m_mainView.Show();
+            ScreenManager.GetInstance().ShowMainView();   
+            Application.Run();
         }
     }
 }

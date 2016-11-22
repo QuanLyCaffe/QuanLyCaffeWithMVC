@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using WinFormMVC.Model;
 
-namespace MVCController
+namespace WinFormMVC.Controller
 {
     public interface IAdminView
     {

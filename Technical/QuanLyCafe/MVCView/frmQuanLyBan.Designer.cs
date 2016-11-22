@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.bottomContain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.contain = new System.Windows.Forms.Panel();
@@ -91,10 +91,9 @@
             this.bottomContain.BackColor = System.Drawing.Color.Transparent;
             this.bottomContain.Controls.Add(this.label1);
             this.bottomContain.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomContain.Location = new System.Drawing.Point(0, 714);
-            this.bottomContain.Margin = new System.Windows.Forms.Padding(4);
+            this.bottomContain.Location = new System.Drawing.Point(0, 580);
             this.bottomContain.Name = "bottomContain";
-            this.bottomContain.Size = new System.Drawing.Size(1270, 31);
+            this.bottomContain.Size = new System.Drawing.Size(952, 25);
             this.bottomContain.TabIndex = 1;
             // 
             // label1
@@ -103,10 +102,9 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1092, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(823, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 20);
+            this.label1.Size = new System.Drawing.Size(129, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hệ Thống Quản Lý Coffee";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -116,10 +114,9 @@
             this.contain.BackColor = System.Drawing.Color.Transparent;
             this.contain.Controls.Add(this.panel3);
             this.contain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contain.Location = new System.Drawing.Point(0, 59);
-            this.contain.Margin = new System.Windows.Forms.Padding(4);
+            this.contain.Location = new System.Drawing.Point(0, 48);
             this.contain.Name = "contain";
-            this.contain.Size = new System.Drawing.Size(1270, 655);
+            this.contain.Size = new System.Drawing.Size(952, 532);
             this.contain.TabIndex = 2;
             // 
             // panel3
@@ -128,8 +125,9 @@
             this.panel3.Controls.Add(this.tableLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1270, 655);
+            this.panel3.Size = new System.Drawing.Size(952, 532);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -137,7 +135,7 @@
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.50094F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.50094F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.rbOderList, 1, 0);
@@ -145,10 +143,11 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1270, 655);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(952, 532);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox2
@@ -157,9 +156,11 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(979, 3);
+            this.groupBox2.Location = new System.Drawing.Point(733, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(288, 649);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(217, 528);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách thực đơn";
@@ -171,20 +172,20 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listViewCookTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup2";
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup3";
+            listViewGroup4.Header = "ListViewGroup";
+            listViewGroup4.Name = "listViewGroup1";
+            listViewGroup5.Header = "ListViewGroup";
+            listViewGroup5.Name = "listViewGroup2";
+            listViewGroup6.Header = "ListViewGroup";
+            listViewGroup6.Name = "listViewGroup3";
             this.listViewCookTable.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3});
-            this.listViewCookTable.Location = new System.Drawing.Point(3, 26);
-            this.listViewCookTable.Margin = new System.Windows.Forms.Padding(10);
+            listViewGroup4,
+            listViewGroup5,
+            listViewGroup6});
+            this.listViewCookTable.Location = new System.Drawing.Point(2, 21);
+            this.listViewCookTable.Margin = new System.Windows.Forms.Padding(8);
             this.listViewCookTable.Name = "listViewCookTable";
-            this.listViewCookTable.Size = new System.Drawing.Size(282, 620);
+            this.listViewCookTable.Size = new System.Drawing.Size(213, 505);
             this.listViewCookTable.TabIndex = 0;
             this.listViewCookTable.UseCompatibleStateImageBehavior = false;
             this.listViewCookTable.View = System.Windows.Forms.View.Details;
@@ -222,10 +223,11 @@
             this.rbOderList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rbOderList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbOderList.ForeColor = System.Drawing.Color.Black;
-            this.rbOderList.Location = new System.Drawing.Point(441, 3);
+            this.rbOderList.Location = new System.Drawing.Point(330, 2);
+            this.rbOderList.Margin = new System.Windows.Forms.Padding(2);
             this.rbOderList.Name = "rbOderList";
-            this.rbOderList.Padding = new System.Windows.Forms.Padding(10);
-            this.rbOderList.Size = new System.Drawing.Size(432, 649);
+            this.rbOderList.Padding = new System.Windows.Forms.Padding(8);
+            this.rbOderList.Size = new System.Drawing.Size(324, 528);
             this.rbOderList.TabIndex = 17;
             this.rbOderList.TabStop = false;
             this.rbOderList.Text = "Bàn số 1 : đang có khách";
@@ -236,9 +238,10 @@
             this.btnReaseTable.ForeColor = System.Drawing.Color.BurlyWood;
             this.btnReaseTable.Image = global::MVCView.Properties.Resources.exit;
             this.btnReaseTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReaseTable.Location = new System.Drawing.Point(299, 536);
+            this.btnReaseTable.Location = new System.Drawing.Point(224, 436);
+            this.btnReaseTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnReaseTable.Name = "btnReaseTable";
-            this.btnReaseTable.Size = new System.Drawing.Size(120, 40);
+            this.btnReaseTable.Size = new System.Drawing.Size(90, 32);
             this.btnReaseTable.TabIndex = 24;
             this.btnReaseTable.Text = "Trả bàn";
             this.btnReaseTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,9 +252,10 @@
             this.btnJoinTable.ForeColor = System.Drawing.Color.BurlyWood;
             this.btnJoinTable.Image = global::MVCView.Properties.Resources.move;
             this.btnJoinTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnJoinTable.Location = new System.Drawing.Point(13, 536);
+            this.btnJoinTable.Location = new System.Drawing.Point(10, 436);
+            this.btnJoinTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnJoinTable.Name = "btnJoinTable";
-            this.btnJoinTable.Size = new System.Drawing.Size(220, 40);
+            this.btnJoinTable.Size = new System.Drawing.Size(165, 32);
             this.btnJoinTable.TabIndex = 23;
             this.btnJoinTable.Text = "Chuyển ghép bán";
             this.btnJoinTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -263,9 +267,10 @@
             this.btnPayTable.ForeColor = System.Drawing.Color.BurlyWood;
             this.btnPayTable.Image = global::MVCView.Properties.Resources.printer;
             this.btnPayTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPayTable.Location = new System.Drawing.Point(259, 479);
+            this.btnPayTable.Location = new System.Drawing.Point(194, 389);
+            this.btnPayTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnPayTable.Name = "btnPayTable";
-            this.btnPayTable.Size = new System.Drawing.Size(160, 40);
+            this.btnPayTable.Size = new System.Drawing.Size(120, 32);
             this.btnPayTable.TabIndex = 22;
             this.btnPayTable.Text = "Thanh toán";
             this.btnPayTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -277,9 +282,10 @@
             this.btnEnterTable.ForeColor = System.Drawing.Color.Sienna;
             this.btnEnterTable.Image = global::MVCView.Properties.Resources.accept;
             this.btnEnterTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEnterTable.Location = new System.Drawing.Point(13, 479);
+            this.btnEnterTable.Location = new System.Drawing.Point(10, 389);
+            this.btnEnterTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnterTable.Name = "btnEnterTable";
-            this.btnEnterTable.Size = new System.Drawing.Size(130, 40);
+            this.btnEnterTable.Size = new System.Drawing.Size(98, 32);
             this.btnEnterTable.TabIndex = 21;
             this.btnEnterTable.Text = "Bắt đầu";
             this.btnEnterTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -292,9 +298,10 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Checked = true;
             this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Location = new System.Drawing.Point(266, 386);
+            this.checkBox3.Location = new System.Drawing.Point(200, 314);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(114, 29);
+            this.checkBox3.Size = new System.Drawing.Size(92, 24);
             this.checkBox3.TabIndex = 20;
             this.checkBox3.Text = "theo(%) .";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -304,9 +311,10 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(131, 433);
+            this.textBox2.Location = new System.Drawing.Point(98, 352);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(288, 30);
+            this.textBox2.Size = new System.Drawing.Size(217, 26);
             this.textBox2.TabIndex = 19;
             // 
             // label4
@@ -314,9 +322,10 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 433);
+            this.label4.Location = new System.Drawing.Point(14, 352);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 25);
+            this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 18;
             this.label4.Text = "Phải trả";
             // 
@@ -325,9 +334,10 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(131, 345);
+            this.textBox1.Location = new System.Drawing.Point(98, 280);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 30);
+            this.textBox1.Size = new System.Drawing.Size(217, 26);
             this.textBox1.TabIndex = 16;
             // 
             // comboBox1
@@ -348,9 +358,10 @@
             "60",
             "65",
             "70"});
-            this.comboBox1.Location = new System.Drawing.Point(131, 384);
+            this.comboBox1.Location = new System.Drawing.Point(98, 312);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(119, 33);
+            this.comboBox1.Size = new System.Drawing.Size(90, 28);
             this.comboBox1.TabIndex = 15;
             this.comboBox1.Text = "0";
             // 
@@ -359,9 +370,10 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 386);
+            this.label3.Location = new System.Drawing.Point(10, 314);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 25);
+            this.label3.Size = new System.Drawing.Size(72, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "Giảm giá";
             // 
@@ -370,9 +382,10 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 345);
+            this.label5.Location = new System.Drawing.Point(10, 280);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 25);
+            this.label5.Size = new System.Drawing.Size(75, 20);
             this.label5.TabIndex = 12;
             this.label5.Text = "Tổng tiền";
             // 
@@ -380,9 +393,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 55);
+            this.label2.Location = new System.Drawing.Point(95, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 11;
             // 
             // listViewOrder
@@ -393,9 +407,10 @@
             this.columnCookTableName,
             this.columntotal,
             this.columnPrice});
-            this.listViewOrder.Location = new System.Drawing.Point(13, 36);
+            this.listViewOrder.Location = new System.Drawing.Point(10, 29);
+            this.listViewOrder.Margin = new System.Windows.Forms.Padding(2);
             this.listViewOrder.Name = "listViewOrder";
-            this.listViewOrder.Size = new System.Drawing.Size(406, 281);
+            this.listViewOrder.Size = new System.Drawing.Size(306, 229);
             this.listViewOrder.TabIndex = 8;
             this.listViewOrder.UseCompatibleStateImageBehavior = false;
             this.listViewOrder.View = System.Windows.Forms.View.Details;
@@ -422,21 +437,24 @@
             this.tableLayoutPanel2.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupBox3, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(432, 649);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(324, 528);
             this.tableLayoutPanel2.TabIndex = 18;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.flpTables);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(426, 567);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(320, 462);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách bàn";
@@ -446,18 +464,20 @@
             this.flpTables.AutoScroll = true;
             this.flpTables.Controls.Add(this.button7);
             this.flpTables.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpTables.Location = new System.Drawing.Point(3, 18);
+            this.flpTables.Location = new System.Drawing.Point(2, 15);
+            this.flpTables.Margin = new System.Windows.Forms.Padding(2);
             this.flpTables.Name = "flpTables";
-            this.flpTables.Size = new System.Drawing.Size(420, 546);
+            this.flpTables.Size = new System.Drawing.Size(316, 445);
             this.flpTables.TabIndex = 12;
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.BurlyWood;
-            this.button7.Location = new System.Drawing.Point(3, 3);
+            this.button7.Location = new System.Drawing.Point(2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 118);
+            this.button7.Size = new System.Drawing.Size(82, 96);
             this.button7.TabIndex = 0;
             this.button7.Text = "Bàn 1";
             this.button7.UseVisualStyleBackColor = true;
@@ -468,9 +488,11 @@
             this.groupBox3.Controls.Add(this.btnEditTable);
             this.groupBox3.Controls.Add(this.btnAddNewTable);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(3, 576);
+            this.groupBox3.Location = new System.Drawing.Point(2, 468);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(426, 70);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Size = new System.Drawing.Size(320, 58);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
@@ -479,9 +501,10 @@
             // 
             this.btnDeleteTable.Image = global::MVCView.Properties.Resources.delete;
             this.btnDeleteTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeleteTable.Location = new System.Drawing.Point(295, 21);
+            this.btnDeleteTable.Location = new System.Drawing.Point(221, 17);
+            this.btnDeleteTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteTable.Name = "btnDeleteTable";
-            this.btnDeleteTable.Size = new System.Drawing.Size(110, 40);
+            this.btnDeleteTable.Size = new System.Drawing.Size(82, 32);
             this.btnDeleteTable.TabIndex = 2;
             this.btnDeleteTable.Text = "Xóa";
             this.btnDeleteTable.UseVisualStyleBackColor = true;
@@ -490,9 +513,10 @@
             // 
             this.btnEditTable.Image = global::MVCView.Properties.Resources.edit;
             this.btnEditTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditTable.Location = new System.Drawing.Point(171, 21);
+            this.btnEditTable.Location = new System.Drawing.Point(128, 17);
+            this.btnEditTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditTable.Name = "btnEditTable";
-            this.btnEditTable.Size = new System.Drawing.Size(100, 40);
+            this.btnEditTable.Size = new System.Drawing.Size(75, 32);
             this.btnEditTable.TabIndex = 1;
             this.btnEditTable.Text = "Sửa";
             this.btnEditTable.UseVisualStyleBackColor = true;
@@ -501,9 +525,10 @@
             // 
             this.btnAddNewTable.Image = global::MVCView.Properties.Resources.add;
             this.btnAddNewTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddNewTable.Location = new System.Drawing.Point(16, 21);
+            this.btnAddNewTable.Location = new System.Drawing.Point(12, 17);
+            this.btnAddNewTable.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddNewTable.Name = "btnAddNewTable";
-            this.btnAddNewTable.Size = new System.Drawing.Size(130, 40);
+            this.btnAddNewTable.Size = new System.Drawing.Size(98, 32);
             this.btnAddNewTable.TabIndex = 0;
             this.btnAddNewTable.Text = "Thêm Bàn";
             this.btnAddNewTable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -515,25 +540,28 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(879, 3);
+            this.panel1.Location = new System.Drawing.Point(658, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(94, 649);
+            this.panel1.Size = new System.Drawing.Size(71, 528);
             this.panel1.TabIndex = 21;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 170);
+            this.button2.Location = new System.Drawing.Point(2, 138);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 73);
+            this.button2.Size = new System.Drawing.Size(65, 59);
             this.button2.TabIndex = 1;
             this.button2.Text = "Xóa >>";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(4, 69);
+            this.button1.Location = new System.Drawing.Point(3, 56);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 73);
+            this.button1.Size = new System.Drawing.Size(65, 59);
             this.button1.TabIndex = 0;
             this.button1.Text = "<< Thêm";
             this.button1.UseVisualStyleBackColor = true;
@@ -543,10 +571,9 @@
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.Black;
-            this.lblTime.Location = new System.Drawing.Point(301, 11);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTime.Location = new System.Drawing.Point(226, 9);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(75, 33);
+            this.lblTime.Size = new System.Drawing.Size(58, 25);
             this.lblTime.TabIndex = 0;
             this.lblTime.Text = "00:00";
             // 
@@ -555,10 +582,9 @@
             this.lbldate.AutoSize = true;
             this.lbldate.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldate.ForeColor = System.Drawing.Color.Black;
-            this.lbldate.Location = new System.Drawing.Point(387, 11);
-            this.lbldate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldate.Location = new System.Drawing.Point(290, 9);
             this.lbldate.Name = "lbldate";
-            this.lbldate.Size = new System.Drawing.Size(139, 33);
+            this.lbldate.Size = new System.Drawing.Size(108, 25);
             this.lbldate.TabIndex = 0;
             this.lbldate.Text = "01/12/2016";
             // 
@@ -569,22 +595,20 @@
             this.topContain.Controls.Add(this.lblTime);
             this.topContain.Dock = System.Windows.Forms.DockStyle.Top;
             this.topContain.Location = new System.Drawing.Point(0, 0);
-            this.topContain.Margin = new System.Windows.Forms.Padding(4);
             this.topContain.Name = "topContain";
-            this.topContain.Size = new System.Drawing.Size(1270, 59);
+            this.topContain.Size = new System.Drawing.Size(952, 48);
             this.topContain.TabIndex = 0;
             // 
             // frmQuanLyBan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1270, 745);
+            this.ClientSize = new System.Drawing.Size(952, 605);
             this.Controls.Add(this.contain);
             this.Controls.Add(this.bottomContain);
             this.Controls.Add(this.topContain);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmQuanLyBan";
             this.Text = "Quản Lý Bàn";
             this.bottomContain.ResumeLayout(false);

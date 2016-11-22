@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using WinFormMVC.Model;
-using MVCController;
+using WinFormMVC.Controller;
 
 namespace MVCView
 {
@@ -19,7 +19,12 @@ namespace MVCView
             InitializeComponent();
             ResetView();
             SetActiveButton(false);
+            //ShowLogin();
         }
+        //private void ShowLogin()
+        //{
+        //    ScreenManager.GetInstance().m_login.ShowDialog();
+        //}
 
         private AdminController m_adminController;
 
