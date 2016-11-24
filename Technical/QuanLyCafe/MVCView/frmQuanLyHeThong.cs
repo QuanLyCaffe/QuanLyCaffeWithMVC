@@ -9,25 +9,29 @@ using System.Windows.Forms;
 
 using WinFormMVC.Model;
 using WinFormMVC.Controller;
+using System.Collections;
 
 namespace MVCView
 {
     public partial class frmQuanLyHeThong : Form,IAdminView
     {
+        private AdminController m_adminController;
+        IList m_listData = new ArrayList();
         public frmQuanLyHeThong()
         {
             InitializeComponent();
-            ResetView();
-            SetActiveButton(false);
-            //ShowLogin();
+            Init();
         }
-        //private void ShowLogin()
-        //{
-        //    ScreenManager.GetInstance().m_login.ShowDialog();
-        //}
-
-        private AdminController m_adminController;
-
+       
+        private void Init()
+        {
+            m_listData.Add(new Admin("id01", "test", "1", Admin.isAdmin.Male));
+            m_adminController = new AdminController(this, m_listData);
+            SetController(m_adminController);
+            ResetView();
+            m_adminController.LoadView();
+            SetActiveButton(false);
+        }
         private void ResetView()
         {
             this.m_adminName = "";
@@ -137,7 +141,6 @@ namespace MVCView
                 txtUserName.Text = value;
             }
         }
-
         public string m_password
         {
             get
@@ -149,7 +152,6 @@ namespace MVCView
                txtPassword.Text = value;
             }
         }
-
         public Admin.isAdmin m_isAdmin
         {
             get
@@ -174,12 +176,10 @@ namespace MVCView
                 }
             }
         }
-
         public bool CanModifyID
         {
             set { this.txbAdminID.Enabled = value; }
         }
-
         public string m_adminID
         {
             get

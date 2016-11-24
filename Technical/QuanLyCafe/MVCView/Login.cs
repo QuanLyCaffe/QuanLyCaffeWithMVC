@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
 using WinFormMVC.Controller;
 using WinFormMVC.Model;
 
@@ -14,12 +14,22 @@ namespace MVCView
 {
     public partial class Login : Form,ILogin
     {
-        LoginController m_loginController; 
-        
+        LoginController m_loginController;
+        IList m_listData;
+
         public Login()
         {
             InitializeComponent();
+            Init();
         }
+
+        private void Init()
+        {
+            m_listData = new ArrayList();
+            m_listData.Add(new Admin("id01", "a", "1", Admin.isAdmin.Male));
+            m_loginController = new LoginController(this,m_listData);
+        }
+      
         public string m_userName
         {
             get
@@ -44,11 +54,6 @@ namespace MVCView
             }
         }
 
-        public void SetController(LoginController _loginController)
-        {
-            m_loginController = _loginController;
-        }
-
         public bool Checking()
         {
             return m_loginController.Checking();
@@ -58,7 +63,6 @@ namespace MVCView
             if(Checking())
             {
                 ScreenManager.GetInstance().m_login.Hide();
-                //ScreenManager.GetInstance().m_mainView.Show();
             }
         }
 

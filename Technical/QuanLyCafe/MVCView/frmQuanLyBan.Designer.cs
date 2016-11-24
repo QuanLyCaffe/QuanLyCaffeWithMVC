@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.bottomContain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.contain = new System.Windows.Forms.Panel();
@@ -172,16 +172,16 @@
             this.columnHeader5,
             this.columnHeader6});
             this.listViewCookTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            listViewGroup4.Header = "ListViewGroup";
-            listViewGroup4.Name = "listViewGroup1";
-            listViewGroup5.Header = "ListViewGroup";
-            listViewGroup5.Name = "listViewGroup2";
-            listViewGroup6.Header = "ListViewGroup";
-            listViewGroup6.Name = "listViewGroup3";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "listViewGroup2";
+            listViewGroup3.Header = "ListViewGroup";
+            listViewGroup3.Name = "listViewGroup3";
             this.listViewCookTable.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup4,
-            listViewGroup5,
-            listViewGroup6});
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3});
             this.listViewCookTable.Location = new System.Drawing.Point(2, 21);
             this.listViewCookTable.Margin = new System.Windows.Forms.Padding(8);
             this.listViewCookTable.Name = "listViewCookTable";
@@ -523,7 +523,6 @@
             // 
             // btnAddNewTable
             // 
-            this.btnAddNewTable.Image = global::MVCView.Properties.Resources.add;
             this.btnAddNewTable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddNewTable.Location = new System.Drawing.Point(12, 17);
             this.btnAddNewTable.Margin = new System.Windows.Forms.Padding(2);

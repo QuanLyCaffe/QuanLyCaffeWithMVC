@@ -10,7 +10,6 @@ namespace WinFormMVC.Controller
     public class LoginController
     {
         private ILogin m_loginView;
-
         public ILogin LoginView
         {
             get { return m_loginView; }
@@ -23,7 +22,6 @@ namespace WinFormMVC.Controller
             set { m_listAdmin = value; }
         }
         private Admin m_currAdmin;
-
         public Admin CurrAdmin
         {
             get { return m_currAdmin; }
@@ -41,7 +39,6 @@ namespace WinFormMVC.Controller
         {
             m_loginView = _loginView;
             m_listAdmin = _listAdmin;
-            m_loginView.SetController(this);
             CurrAdmin = new Admin();
         }
         public bool Checking()
@@ -68,6 +65,7 @@ namespace WinFormMVC.Controller
                 return false;
             }
         }
+
         private void GetValuesFromView()
         {
             CurrAdmin.AdminName = this.m_loginView.m_userName;

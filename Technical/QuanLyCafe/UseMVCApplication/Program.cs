@@ -9,7 +9,6 @@ using  WinFormMVC.View;
 using  WinFormMVC.Controller;
 using MVCView;
 
-
 namespace UseMVCApplication
 {
     static class Program
@@ -21,6 +20,16 @@ namespace UseMVCApplication
         static void Main()
         {
             ScreenManager.GetInstance();
+
+            //IList listAdminTest = new ArrayList();
+            //listAdminTest.Add(new Admin("id01", "", "", Admin.isAdmin.Male));
+
+            //ILogin loginView = ScreenManager.GetInstance().m_login;
+            //LoginController loginController = new LoginController(loginView, listAdminTest);
+
+            ScreenManager.GetInstance().ShowMainView();
+            Application.Run();
+
             //// Add some dummy data
             //IList users = new ArrayList();
             //users.Add(new User("Vladimir", "Putin", "122", "Government of Russia", User.SexOfPerson.Male));
@@ -38,15 +47,7 @@ namespace UseMVCApplication
             //controller.LoadView();
             //view.ShowDialog();
 
-            IList listAdminTest = new ArrayList();
-            listAdminTest.Add(new Admin("id01", "", "", Admin.isAdmin.Male));
-
-            ILogin loginView = ScreenManager.GetInstance().m_login;
-            LoginController loginController = new LoginController(loginView,listAdminTest);
-
-            //ScreenManager.GetInstance().m_mainView.Show();
-            ScreenManager.GetInstance().ShowMainView();   
-            Application.Run();
+            
         }
     }
 }

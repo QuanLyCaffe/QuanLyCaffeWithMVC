@@ -30,24 +30,24 @@
         {
             this.top_parent = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUpdateAdmin = new System.Windows.Forms.Button();
             this.btnRemoveAdmin = new System.Windows.Forms.Button();
             this.btnAddAdmin = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.grpAdmin = new System.Windows.Forms.GroupBox();
             this.txbAdminID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grbSex = new System.Windows.Forms.GroupBox();
             this.rdNo = new System.Windows.Forms.RadioButton();
             this.rdYes = new System.Windows.Forms.RadioButton();
+            this.btnCancle = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.lblLastName = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.bottom_parent = new System.Windows.Forms.Panel();
             this.containParent = new System.Windows.Forms.Panel();
             this.grdAdmin = new System.Windows.Forms.ListView();
-            this.btnUpdateAdmin = new System.Windows.Forms.Button();
-            this.btnCancle = new System.Windows.Forms.Button();
             this.top_parent.SuspendLayout();
             this.panel1.SuspendLayout();
             this.grpAdmin.SuspendLayout();
@@ -62,7 +62,7 @@
             this.top_parent.Dock = System.Windows.Forms.DockStyle.Top;
             this.top_parent.Location = new System.Drawing.Point(0, 0);
             this.top_parent.Name = "top_parent";
-            this.top_parent.Size = new System.Drawing.Size(723, 140);
+            this.top_parent.Size = new System.Drawing.Size(758, 168);
             this.top_parent.TabIndex = 0;
             // 
             // panel1
@@ -74,41 +74,56 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(492, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(231, 140);
+            this.panel1.Size = new System.Drawing.Size(266, 168);
             this.panel1.TabIndex = 36;
+            // 
+            // btnUpdateAdmin
+            // 
+            this.btnUpdateAdmin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdateAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUpdateAdmin.Image = global::MVCView.Properties.Resources.Pencil_icon;
+            this.btnUpdateAdmin.Location = new System.Drawing.Point(41, 57);
+            this.btnUpdateAdmin.Name = "btnUpdateAdmin";
+            this.btnUpdateAdmin.Size = new System.Drawing.Size(140, 35);
+            this.btnUpdateAdmin.TabIndex = 35;
+            this.btnUpdateAdmin.Text = "&Update";
+            this.btnUpdateAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdateAdmin.UseVisualStyleBackColor = false;
+            this.btnUpdateAdmin.Click += new System.EventHandler(this.btnUpdateAdmin_Click);
             // 
             // btnRemoveAdmin
             // 
-            this.btnRemoveAdmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnRemoveAdmin.Location = new System.Drawing.Point(41, 52);
+            this.btnRemoveAdmin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRemoveAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRemoveAdmin.Image = global::MVCView.Properties.Resources.delete_icon__1_;
+            this.btnRemoveAdmin.Location = new System.Drawing.Point(41, 114);
             this.btnRemoveAdmin.Name = "btnRemoveAdmin";
-            this.btnRemoveAdmin.Size = new System.Drawing.Size(140, 30);
+            this.btnRemoveAdmin.Size = new System.Drawing.Size(140, 35);
             this.btnRemoveAdmin.TabIndex = 35;
-            this.btnRemoveAdmin.Text = "&Remove User";
+            this.btnRemoveAdmin.Text = "&Remove";
+            this.btnRemoveAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnRemoveAdmin.UseVisualStyleBackColor = false;
             this.btnRemoveAdmin.Click += new System.EventHandler(this.btnRemoveAdmin_Click);
             // 
             // btnAddAdmin
             // 
-            this.btnAddAdmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnAddAdmin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAddAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAdmin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddAdmin.Image = global::MVCView.Properties.Resources.add_icon;
             this.btnAddAdmin.Location = new System.Drawing.Point(41, 12);
             this.btnAddAdmin.Name = "btnAddAdmin";
-            this.btnAddAdmin.Size = new System.Drawing.Size(140, 30);
+            this.btnAddAdmin.Size = new System.Drawing.Size(140, 35);
             this.btnAddAdmin.TabIndex = 34;
-            this.btnAddAdmin.Text = "&Add New User";
+            this.btnAddAdmin.Text = "&New";
+            this.btnAddAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddAdmin.UseVisualStyleBackColor = false;
             this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnSave.Location = new System.Drawing.Point(264, 91);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(90, 30);
-            this.btnSave.TabIndex = 36;
-            this.btnSave.Text = "&Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // grpAdmin
             // 
@@ -127,25 +142,25 @@
             this.grpAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpAdmin.Location = new System.Drawing.Point(0, 0);
             this.grpAdmin.Name = "grpAdmin";
-            this.grpAdmin.Size = new System.Drawing.Size(492, 140);
+            this.grpAdmin.Size = new System.Drawing.Size(492, 168);
             this.grpAdmin.TabIndex = 35;
             this.grpAdmin.TabStop = false;
             this.grpAdmin.Text = "Register New User :";
             // 
             // txbAdminID
             // 
-            this.txbAdminID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAdminID.Location = new System.Drawing.Point(96, 24);
+            this.txbAdminID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAdminID.Location = new System.Drawing.Point(105, 24);
             this.txbAdminID.Name = "txbAdminID";
-            this.txbAdminID.Size = new System.Drawing.Size(132, 22);
+            this.txbAdminID.Size = new System.Drawing.Size(132, 26);
             this.txbAdminID.TabIndex = 30;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 23);
+            this.label1.Size = new System.Drawing.Size(90, 23);
             this.label1.TabIndex = 31;
             this.label1.Text = "ID:";
             // 
@@ -153,7 +168,7 @@
             // 
             this.grbSex.Controls.Add(this.rdNo);
             this.grbSex.Controls.Add(this.rdYes);
-            this.grbSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbSex.ForeColor = System.Drawing.SystemColors.MenuText;
             this.grbSex.Location = new System.Drawing.Point(264, 19);
             this.grbSex.Name = "grbSex";
@@ -172,43 +187,71 @@
             // 
             // rdYes
             // 
-            this.rdYes.Location = new System.Drawing.Point(37, 25);
+            this.rdYes.Location = new System.Drawing.Point(25, 25);
             this.rdYes.Name = "rdYes";
-            this.rdYes.Size = new System.Drawing.Size(53, 24);
+            this.rdYes.Size = new System.Drawing.Size(65, 24);
             this.rdYes.TabIndex = 4;
             this.rdYes.Text = "Yes";
             // 
+            // btnCancle
+            // 
+            this.btnCancle.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancle.Location = new System.Drawing.Point(373, 99);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(90, 32);
+            this.btnCancle.TabIndex = 36;
+            this.btnCancle.Text = "&Cancel";
+            this.btnCancle.UseVisualStyleBackColor = false;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(96, 88);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(105, 103);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(132, 22);
+            this.txtPassword.Size = new System.Drawing.Size(132, 26);
             this.txtPassword.TabIndex = 4;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSave.Location = new System.Drawing.Point(264, 99);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(90, 32);
+            this.btnSave.TabIndex = 36;
+            this.btnSave.Text = "&Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblLastName
             // 
-            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(12, 91);
+            this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(12, 106);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(78, 23);
+            this.lblLastName.Size = new System.Drawing.Size(90, 23);
             this.lblLastName.TabIndex = 23;
             this.lblLastName.Text = "Password:";
             // 
             // txtUserName
             // 
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(96, 56);
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(105, 64);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(132, 22);
+            this.txtUserName.Size = new System.Drawing.Size(132, 26);
             this.txtUserName.TabIndex = 1;
             // 
             // lblFirstName
             // 
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(12, 59);
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(12, 67);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(84, 23);
+            this.lblFirstName.Size = new System.Drawing.Size(96, 23);
             this.lblFirstName.TabIndex = 19;
             this.lblFirstName.Text = "User Name:";
             // 
@@ -216,62 +259,40 @@
             // 
             this.bottom_parent.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bottom_parent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottom_parent.Location = new System.Drawing.Point(0, 372);
+            this.bottom_parent.Location = new System.Drawing.Point(0, 390);
             this.bottom_parent.Name = "bottom_parent";
-            this.bottom_parent.Size = new System.Drawing.Size(723, 25);
+            this.bottom_parent.Size = new System.Drawing.Size(758, 25);
             this.bottom_parent.TabIndex = 1;
             // 
             // containParent
             // 
             this.containParent.Controls.Add(this.grdAdmin);
             this.containParent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.containParent.Location = new System.Drawing.Point(0, 140);
+            this.containParent.Location = new System.Drawing.Point(0, 168);
             this.containParent.Name = "containParent";
-            this.containParent.Size = new System.Drawing.Size(723, 232);
+            this.containParent.Size = new System.Drawing.Size(758, 222);
             this.containParent.TabIndex = 2;
             // 
             // grdAdmin
             // 
             this.grdAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grdAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grdAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grdAdmin.FullRowSelect = true;
             this.grdAdmin.GridLines = true;
             this.grdAdmin.Location = new System.Drawing.Point(0, 0);
             this.grdAdmin.Name = "grdAdmin";
-            this.grdAdmin.Size = new System.Drawing.Size(723, 232);
+            this.grdAdmin.Size = new System.Drawing.Size(758, 222);
             this.grdAdmin.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.grdAdmin.TabIndex = 36;
             this.grdAdmin.UseCompatibleStateImageBehavior = false;
             this.grdAdmin.View = System.Windows.Forms.View.Details;
             this.grdAdmin.SelectedIndexChanged += new System.EventHandler(this.grdAdmin_SelectedIndexChanged);
             // 
-            // btnUpdateAdmin
-            // 
-            this.btnUpdateAdmin.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnUpdateAdmin.Location = new System.Drawing.Point(41, 91);
-            this.btnUpdateAdmin.Name = "btnUpdateAdmin";
-            this.btnUpdateAdmin.Size = new System.Drawing.Size(140, 30);
-            this.btnUpdateAdmin.TabIndex = 35;
-            this.btnUpdateAdmin.Text = "&Update User";
-            this.btnUpdateAdmin.UseVisualStyleBackColor = false;
-            this.btnUpdateAdmin.Click += new System.EventHandler(this.btnUpdateAdmin_Click);
-            // 
-            // btnCancle
-            // 
-            this.btnCancle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnCancle.Location = new System.Drawing.Point(373, 91);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(93, 30);
-            this.btnCancle.TabIndex = 36;
-            this.btnCancle.Text = "&Cancel";
-            this.btnCancle.UseVisualStyleBackColor = false;
-            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
-            // 
             // frmQuanLyHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 397);
+            this.ClientSize = new System.Drawing.Size(758, 415);
             this.Controls.Add(this.containParent);
             this.Controls.Add(this.bottom_parent);
             this.Controls.Add(this.top_parent);

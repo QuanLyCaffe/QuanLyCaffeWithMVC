@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.bottomContain = new System.Windows.Forms.Panel();
+            this.lblStatusLogin = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lgpContainButton = new System.Windows.Forms.FlowLayoutPanel();
@@ -39,7 +40,6 @@
             this.btnBaoCao = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.lblStatusLogin = new System.Windows.Forms.Label();
             this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,6 +66,15 @@
             this.bottomContain.Name = "bottomContain";
             this.bottomContain.Size = new System.Drawing.Size(653, 25);
             this.bottomContain.TabIndex = 1;
+            // 
+            // lblStatusLogin
+            // 
+            this.lblStatusLogin.AutoSize = true;
+            this.lblStatusLogin.Location = new System.Drawing.Point(3, 7);
+            this.lblStatusLogin.Name = "lblStatusLogin";
+            this.lblStatusLogin.Size = new System.Drawing.Size(205, 13);
+            this.lblStatusLogin.TabIndex = 1;
+            this.lblStatusLogin.Text = "Vui lòng đăng nhập để sử dụng hệ thống!";
             // 
             // lblTitle
             // 
@@ -211,15 +220,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // lblStatusLogin
-            // 
-            this.lblStatusLogin.AutoSize = true;
-            this.lblStatusLogin.Location = new System.Drawing.Point(3, 7);
-            this.lblStatusLogin.Name = "lblStatusLogin";
-            this.lblStatusLogin.Size = new System.Drawing.Size(205, 13);
-            this.lblStatusLogin.TabIndex = 1;
-            this.lblStatusLogin.Text = "Vui lòng đăng nhập để sử dụng hệ thống!";
-            // 
             // hệThốngToolStripMenuItem
             // 
             this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -233,19 +233,19 @@
             // đăngNhậpToolStripMenuItem
             // 
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.đăngNhậpToolStripMenuItem.Text = "Đăng Nhập";
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             // 
             // quảnLýToolStripMenuItem

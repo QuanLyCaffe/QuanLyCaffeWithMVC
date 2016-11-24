@@ -10,7 +10,7 @@ namespace WinFormMVC.Controller
         string m_userName{get;set;}
         string m_passWord{get;set;}
 
-        void SetController(LoginController _loginController);
+        //void SetController(LoginController _loginController);
         bool Checking();
     }
 }

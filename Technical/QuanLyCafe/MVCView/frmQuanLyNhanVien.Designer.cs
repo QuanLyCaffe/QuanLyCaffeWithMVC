@@ -69,7 +69,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel4.Controls.Add(this.btnXoaNV);
             this.panel4.Controls.Add(this.btnThemNV);
             this.panel4.Controls.Add(this.btnUpdateNV);
@@ -81,10 +81,10 @@
             // 
             // btnXoaNV
             // 
-            this.btnXoaNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoaNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaNV.Location = new System.Drawing.Point(29, 49);
+            this.btnXoaNV.BackColor = System.Drawing.SystemColors.Control;
+            this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaNV.Location = new System.Drawing.Point(29, 113);
             this.btnXoaNV.Name = "btnXoaNV";
             this.btnXoaNV.Size = new System.Drawing.Size(140, 30);
             this.btnXoaNV.TabIndex = 35;
@@ -93,9 +93,9 @@
             // 
             // btnThemNV
             // 
-            this.btnThemNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemNV.BackColor = System.Drawing.SystemColors.Control;
+            this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemNV.Location = new System.Drawing.Point(29, 13);
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(140, 30);
@@ -105,10 +105,10 @@
             // 
             // btnUpdateNV
             // 
-            this.btnUpdateNV.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnUpdateNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateNV.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateNV.Location = new System.Drawing.Point(29, 102);
+            this.btnUpdateNV.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdateNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpdateNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateNV.Location = new System.Drawing.Point(29, 54);
             this.btnUpdateNV.Name = "btnUpdateNV";
             this.btnUpdateNV.Size = new System.Drawing.Size(140, 30);
             this.btnUpdateNV.TabIndex = 36;
@@ -130,6 +130,7 @@
             this.grpDetails.Controls.Add(this.lblCMND);
             this.grpDetails.Dock = System.Windows.Forms.DockStyle.Left;
             this.grpDetails.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grpDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpDetails.Location = new System.Drawing.Point(0, 0);
             this.grpDetails.Name = "grpDetails";
             this.grpDetails.Size = new System.Drawing.Size(533, 159);
@@ -142,7 +143,7 @@
             this.dtpNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayBatDau.Location = new System.Drawing.Point(368, 54);
             this.dtpNgayBatDau.Name = "dtpNgayBatDau";
-            this.dtpNgayBatDau.Size = new System.Drawing.Size(140, 20);
+            this.dtpNgayBatDau.Size = new System.Drawing.Size(140, 22);
             this.dtpNgayBatDau.TabIndex = 30;
             // 
             // dtpNgaySinh
@@ -150,7 +151,7 @@
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgaySinh.Location = new System.Drawing.Point(368, 28);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(140, 20);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(140, 22);
             this.dtpNgaySinh.TabIndex = 30;
             // 
             // grbgioitinh
@@ -177,7 +178,7 @@
             // 
             this.rdNam.Location = new System.Drawing.Point(41, 16);
             this.rdNam.Name = "rdNam";
-            this.rdNam.Size = new System.Drawing.Size(53, 24);
+            this.rdNam.Size = new System.Drawing.Size(57, 24);
             this.rdNam.TabIndex = 4;
             this.rdNam.Text = "Nam";
             // 
@@ -201,7 +202,7 @@
             // 
             this.txbLuong.Location = new System.Drawing.Point(368, 80);
             this.txbLuong.Name = "txbLuong";
-            this.txbLuong.Size = new System.Drawing.Size(140, 20);
+            this.txbLuong.Size = new System.Drawing.Size(140, 22);
             this.txbLuong.TabIndex = 4;
             // 
             // lbLuong
@@ -214,29 +215,29 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(78, 54);
+            this.txtHoTen.Location = new System.Drawing.Point(85, 54);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(170, 20);
+            this.txtHoTen.Size = new System.Drawing.Size(170, 22);
             this.txtHoTen.TabIndex = 4;
             // 
             // lblHoTen
             // 
-            this.lblHoTen.Location = new System.Drawing.Point(18, 57);
+            this.lblHoTen.Location = new System.Drawing.Point(12, 57);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(63, 23);
+            this.lblHoTen.Size = new System.Drawing.Size(70, 23);
             this.lblHoTen.TabIndex = 23;
             this.lblHoTen.Text = "Họ và tên:";
             // 
             // txtCMND
             // 
-            this.txtCMND.Location = new System.Drawing.Point(78, 28);
+            this.txtCMND.Location = new System.Drawing.Point(85, 28);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(170, 20);
+            this.txtCMND.Size = new System.Drawing.Size(170, 22);
             this.txtCMND.TabIndex = 1;
             // 
             // lblCMND
             // 
-            this.lblCMND.Location = new System.Drawing.Point(18, 31);
+            this.lblCMND.Location = new System.Drawing.Point(12, 28);
             this.lblCMND.Name = "lblCMND";
             this.lblCMND.Size = new System.Drawing.Size(63, 23);
             this.lblCMND.TabIndex = 19;
@@ -246,7 +247,7 @@
             // 
             this.bottomContain.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bottomContain.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomContain.Location = new System.Drawing.Point(0, 375);
+            this.bottomContain.Location = new System.Drawing.Point(0, 400);
             this.bottomContain.Name = "bottomContain";
             this.bottomContain.Size = new System.Drawing.Size(717, 25);
             this.bottomContain.TabIndex = 1;
@@ -257,7 +258,7 @@
             this.contain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contain.Location = new System.Drawing.Point(0, 159);
             this.contain.Name = "contain";
-            this.contain.Size = new System.Drawing.Size(717, 216);
+            this.contain.Size = new System.Drawing.Size(717, 241);
             this.contain.TabIndex = 2;
             // 
             // grdNhanVien
@@ -267,7 +268,7 @@
             this.grdNhanVien.GridLines = true;
             this.grdNhanVien.Location = new System.Drawing.Point(0, 0);
             this.grdNhanVien.Name = "grdNhanVien";
-            this.grdNhanVien.Size = new System.Drawing.Size(717, 216);
+            this.grdNhanVien.Size = new System.Drawing.Size(717, 241);
             this.grdNhanVien.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.grdNhanVien.TabIndex = 36;
             this.grdNhanVien.UseCompatibleStateImageBehavior = false;
@@ -277,7 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 400);
+            this.ClientSize = new System.Drawing.Size(717, 425);
             this.Controls.Add(this.contain);
             this.Controls.Add(this.bottomContain);
             this.Controls.Add(this.topContain);
