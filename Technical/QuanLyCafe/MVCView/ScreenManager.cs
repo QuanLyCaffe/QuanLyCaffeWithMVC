@@ -31,6 +31,7 @@ namespace MVCView
         public frmQuanLyBan m_tableView;
         public Login m_login;
         public MainView m_mainView;
+        public frmQuanLyMatHang m_ItemView;
         #endregion
 
         public void Init()
@@ -39,6 +40,8 @@ namespace MVCView
             m_tableView = new frmQuanLyBan();
             m_login = new Login();
             m_mainView = new MainView();
+            m_ItemView = new frmQuanLyMatHang();
+            
         }
 
         public void HideAllScreen()

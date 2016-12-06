@@ -83,5 +83,10 @@ namespace MVCView
         {
             m_mainController = _mainController;
         }
+
+        private void btn_Items_Click(object sender, EventArgs e)
+        {
+            ScreenManager.GetInstance().m_ItemView.ShowDialog();
+        }
     }
 }
