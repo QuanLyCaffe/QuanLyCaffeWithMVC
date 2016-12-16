@@ -24,14 +24,14 @@ namespace MVCView
             return m_instance;
         }
 
-        public static bool m_isLogin = false;
+        public bool m_isLogin = false;
         #endregion.....................
         #region SCREEN AVAIRABLE...
         public frmQuanLyHeThong m_adminView;
         public frmQuanLyBan m_tableView;
         public Login m_login;
         public MainView m_mainView;
-        public frmQuanLyMatHang m_ItemView;
+        private frmQuanLyNhanVien m_quanLyNV;
         #endregion
 
         public void Init()
@@ -40,8 +40,7 @@ namespace MVCView
             m_tableView = new frmQuanLyBan();
             m_login = new Login();
             m_mainView = new MainView();
-            m_ItemView = new frmQuanLyMatHang();
-            
+            m_quanLyNV = new frmQuanLyNhanVien();
         }
 
         public void HideAllScreen()
@@ -77,6 +76,19 @@ namespace MVCView
                 m_adminView.ShowDialog();
             }
         }
+        public void ShowQuanLyNV()
+        {
+            if (!m_isLogin)
+            {
+                m_quanLyNV.Show();
+                m_login.ShowDialog();
+            }
+            else
+            {
+                m_quanLyNV.ShowDialog();
+            }
+        }
+
         //public void ShowFormQuanLyBan()
         //{
         //    if (!m_isLogin)

@@ -46,7 +46,6 @@ namespace UseMVCApplication
             //UsersController controller = new UsersController(view, users);
             //controller.LoadView();
             //view.ShowDialog();
-
             
         }
     }

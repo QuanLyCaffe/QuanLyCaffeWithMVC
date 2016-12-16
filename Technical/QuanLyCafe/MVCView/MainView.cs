@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 using WinFormMVC.Controller;
 using WinFormMVC.Model;
 
@@ -17,12 +19,53 @@ namespace MVCView
         public MainView()
         {
             InitializeComponent();
+
+            //TEST..............
+            //TestDocDanhSach();
+
+            //TestSuaDanhSach();
+
+            //TestThemDanhSach();
+
+            //TestXoaDanhSach();
         }
 
         private void Init()
         {
             ScreenManager.GetInstance();
         }
+
+        public void TestDocDanhSach()
+        {
+            DataTable dt = SqlController.ExecuteDatatable(Constant.m_conectionString, "DocDanhSachUer");
+            MessageBox.Show(dt.Rows.Count.ToString());
+        }
+        public void TestSuaDanhSach()
+        {
+            SqlParameter[] para = {
+                                      new SqlParameter("@ID",1),
+                                      new SqlParameter("@NAME","SANG")
+                                  };
+            SqlController.ExecuteNonQuery(Constant.m_conectionString, "SuaTest",para);
+        }
+
+        public void TestThemDanhSach()
+        {
+            SqlParameter[] para = {
+                                      new SqlParameter("@ID",100),
+                                      new SqlParameter("@NAME","vien")
+                                  };
+            SqlController.ExecuteNonQuery(Constant.m_conectionString, "ThemTest", para);
+        }
+
+        public void TestXoaDanhSach()
+        {
+            SqlParameter[] para = {
+                                      new SqlParameter("@ID",1),
+                                  };
+            SqlController.ExecuteNonQuery(Constant.m_conectionString, "XoaTest", para);
+        }
+
         private void btnQLBan_Click(object sender, EventArgs e)
         {
             ScreenManager.GetInstance().m_tableView.ShowDialog();
@@ -84,9 +127,9 @@ namespace MVCView
             m_mainController = _mainController;
         }
 
-        private void btn_Items_Click(object sender, EventArgs e)
+        private void btnQuanLyNV_Click(object sender, EventArgs e)
         {
-            ScreenManager.GetInstance().m_ItemView.ShowDialog();
+            ScreenManager.GetInstance().ShowQuanLyNV();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace MVCView
         private void Init()
         {
             m_listData = new ArrayList();
-            m_listData.Add(new Admin("id01", "a", "1", Admin.isAdmin.Male));
+            m_listData.Add(new Admin("id01", "", "", Admin.isAdmin.Male));
             m_loginController = new LoginController(this,m_listData);
         }
       
@@ -62,6 +62,7 @@ namespace MVCView
         {
             if(Checking())
             {
+                ScreenManager.GetInstance().m_isLogin = true;
                 ScreenManager.GetInstance().m_login.Hide();
             }
         }

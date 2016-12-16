@@ -188,6 +188,7 @@
             this.btnQuanLyNV.Text = "Quản lý nhân viên ";
             this.btnQuanLyNV.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnQuanLyNV.UseVisualStyleBackColor = false;
+            this.btnQuanLyNV.Click += new System.EventHandler(this.btnQuanLyNV_Click);
             // 
             // btnBaoCao
             // 

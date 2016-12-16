@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using WinFormMVC.Model;
 
+using System.Data.SqlClient;
+
 namespace WinFormMVC.Controller
 {
     public class AdminController
