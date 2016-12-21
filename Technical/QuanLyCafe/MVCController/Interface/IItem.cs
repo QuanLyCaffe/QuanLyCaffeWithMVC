@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MVCModal;
 
-namespace MVCController
+using WinFormMVC.Model;
+
+namespace WinFormMVC.Controller
 {
     public interface IItem
     {

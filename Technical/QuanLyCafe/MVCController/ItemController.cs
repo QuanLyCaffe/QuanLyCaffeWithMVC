@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using MVCModal;
+
 using WinFormMVC.Controller;
-using MVCModal;
-namespace MVCController
+using WinFormMVC.Model;
+
+namespace WinFormMVC.Controller
 {
     public class ItemController
     {

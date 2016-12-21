@@ -43,11 +43,13 @@
     <Compile Include="Constant.cs" />
     <Compile Include="DebugController.cs" />
     <Compile Include="Interface\IDebug.cs" />
+    <Compile Include="Interface\IItem.cs" />
     <Compile Include="Interface\ILogin.cs" />
     <Compile Include="Interface\IAdminView.cs" />
     <Compile Include="Interface\IMainView.cs" />
     <Compile Include="Interface\ITableView.cs" />
     <Compile Include="Interface\IUsersView.cs" />
+    <Compile Include="ItemController.cs" />
     <Compile Include="LoginController.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
